@@ -61,12 +61,2826 @@
 
     <li class="apidocModuleLi"><a href="#apidoc.module.private-bower">module private-bower</a><ol>
 
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.private-bower.controller">
+            function <span class="apidocSignatureSpan">private-bower.</span>controller
+            <span class="apidocSignatureSpan">(basePath)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">private-bower.</span>application</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">private-bower.</span>configurationManager</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">private-bower.</span>controller.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">private-bower.</span>gitPackageDetailsProvider</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">private-bower.</span>logger</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">private-bower.</span>packageDetailsProvider</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">private-bower.</span>packageManager</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">private-bower.</span>privatePackageStore</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">private-bower.</span>publicPackageStore</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">private-bower.</span>repoCacheHandler</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">private-bower.</span>svnPackageDetailsProvider</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">private-bower.</span>utils</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.private-bower.application">module private-bower.application</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.private-bower.application.addMiddleware">
+            function <span class="apidocSignatureSpan">private-bower.application.</span>addMiddleware
+            <span class="apidocSignatureSpan">(middleware)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.private-bower.application.addMiddlewareWithMount">
+            function <span class="apidocSignatureSpan">private-bower.application.</span>addMiddlewareWithMount
+            <span class="apidocSignatureSpan">(route, middleware)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.private-bower.application.listen">
+            function <span class="apidocSignatureSpan">private-bower.application.</span>listen
+            <span class="apidocSignatureSpan">(port, hostName)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.private-bower.application.loadControllers">
+            function <span class="apidocSignatureSpan">private-bower.application.</span>loadControllers
+            <span class="apidocSignatureSpan">(controllersRoot)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.private-bower.application.restart">
+            function <span class="apidocSignatureSpan">private-bower.application.</span>restart
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.private-bower.application.serveStatic">
+            function <span class="apidocSignatureSpan">private-bower.application.</span>serveStatic
+            <span class="apidocSignatureSpan">(staticPath)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.private-bower.application.setup">
+            function <span class="apidocSignatureSpan">private-bower.application.</span>setup
+            <span class="apidocSignatureSpan">(serverApp, staticHandler, siteBaseUrl)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.private-bower.application.shutDown">
+            function <span class="apidocSignatureSpan">private-bower.application.</span>shutDown
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.private-bower.application.startPrivatePackageStore">
+            function <span class="apidocSignatureSpan">private-bower.application.</span>startPrivatePackageStore
+            <span class="apidocSignatureSpan">(registryFile)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.private-bower.application.startPublicPackageStore">
+            function <span class="apidocSignatureSpan">private-bower.application.</span>startPublicPackageStore
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.private-bower.application.startPublicRepositoryCache">
+            function <span class="apidocSignatureSpan">private-bower.application.</span>startPublicRepositoryCache
+            <span class="apidocSignatureSpan">(repoCacheOptions)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.private-bower.configurationManager">module private-bower.configurationManager</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.private-bower.configurationManager.loadConfiguration">
+            function <span class="apidocSignatureSpan">private-bower.configurationManager.</span>loadConfiguration
+            <span class="apidocSignatureSpan">(configPath)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">private-bower.configurationManager.</span>config</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">private-bower.configurationManager.</span>configPath</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.private-bower.controller">module private-bower.controller</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.private-bower.controller.controller">
+            function <span class="apidocSignatureSpan">private-bower.</span>controller
+            <span class="apidocSignatureSpan">(basePath)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.private-bower.controller.prototype">module private-bower.controller.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.private-bower.controller.prototype.bind">
+            function <span class="apidocSignatureSpan">private-bower.controller.prototype.</span>bind
+            <span class="apidocSignatureSpan">(app, siteBasePath)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.private-bower.controller.prototype.delete">
+            function <span class="apidocSignatureSpan">private-bower.controller.prototype.</span>delete
+            <span class="apidocSignatureSpan">(path, middleware, handler)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.private-bower.controller.prototype.get">
+            function <span class="apidocSignatureSpan">private-bower.controller.prototype.</span>get
+            <span class="apidocSignatureSpan">(path, middleware, handler)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.private-bower.controller.prototype.post">
+            function <span class="apidocSignatureSpan">private-bower.controller.prototype.</span>post
+            <span class="apidocSignatureSpan">(path, middleware, handler)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.private-bower.controller.prototype.put">
+            function <span class="apidocSignatureSpan">private-bower.controller.prototype.</span>put
+            <span class="apidocSignatureSpan">(path, middleware, handler)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.private-bower.gitPackageDetailsProvider">module private-bower.gitPackageDetailsProvider</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.private-bower.gitPackageDetailsProvider.getPackageDetails">
+            function <span class="apidocSignatureSpan">private-bower.gitPackageDetailsProvider.</span>getPackageDetails
+            <span class="apidocSignatureSpan">(packageUrl)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.private-bower.logger">module private-bower.logger</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.private-bower.logger.error">
+            function <span class="apidocSignatureSpan">private-bower.logger.</span>error
+            <span class="apidocSignatureSpan">(text, exception)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.private-bower.logger.log">
+            function <span class="apidocSignatureSpan">private-bower.logger.</span>log
+            <span class="apidocSignatureSpan">(text)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.private-bower.logger.logHelp">
+            function <span class="apidocSignatureSpan">private-bower.logger.</span>logHelp
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.private-bower.packageDetailsProvider">module private-bower.packageDetailsProvider</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.private-bower.packageDetailsProvider.getPackageDetails">
+            function <span class="apidocSignatureSpan">private-bower.packageDetailsProvider.</span>getPackageDetails
+            <span class="apidocSignatureSpan">(packageUrl)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.private-bower.packageManager">module private-bower.packageManager</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.private-bower.packageManager.getPackageDetails">
+            function <span class="apidocSignatureSpan">private-bower.packageManager.</span>getPackageDetails
+            <span class="apidocSignatureSpan">(packageName)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.private-bower.packageManager.getPackageForInstall">
+            function <span class="apidocSignatureSpan">private-bower.packageManager.</span>getPackageForInstall
+            <span class="apidocSignatureSpan">(packageName)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.private-bower.packageManager.getPrivatePackages">
+            function <span class="apidocSignatureSpan">private-bower.packageManager.</span>getPrivatePackages
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.private-bower.packageManager.refresh">
+            function <span class="apidocSignatureSpan">private-bower.packageManager.</span>refresh
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.private-bower.packageManager.registerPackages">
+            function <span class="apidocSignatureSpan">private-bower.packageManager.</span>registerPackages
+            <span class="apidocSignatureSpan">(packages)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.private-bower.packageManager.removePackages">
+            function <span class="apidocSignatureSpan">private-bower.packageManager.</span>removePackages
+            <span class="apidocSignatureSpan">(packages)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.private-bower.packageManager.searchPackage">
+            function <span class="apidocSignatureSpan">private-bower.packageManager.</span>searchPackage
+            <span class="apidocSignatureSpan">(searchName)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.private-bower.privatePackageStore">module private-bower.privatePackageStore</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.private-bower.privatePackageStore.getPackage">
+            function <span class="apidocSignatureSpan">private-bower.privatePackageStore.</span>getPackage
+            <span class="apidocSignatureSpan">(packageName)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.private-bower.privatePackageStore.persistPackages">
+            function <span class="apidocSignatureSpan">private-bower.privatePackageStore.</span>persistPackages
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.private-bower.privatePackageStore.registerPackages">
+            function <span class="apidocSignatureSpan">private-bower.privatePackageStore.</span>registerPackages
+            <span class="apidocSignatureSpan">(register)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.private-bower.privatePackageStore.removePackages">
+            function <span class="apidocSignatureSpan">private-bower.privatePackageStore.</span>removePackages
+            <span class="apidocSignatureSpan">(remove)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.private-bower.privatePackageStore.searchPackage">
+            function <span class="apidocSignatureSpan">private-bower.privatePackageStore.</span>searchPackage
+            <span class="apidocSignatureSpan">(name)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.private-bower.privatePackageStore.start">
+            function <span class="apidocSignatureSpan">private-bower.privatePackageStore.</span>start
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">private-bower.privatePackageStore.</span>packages</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.private-bower.publicPackageStore">module private-bower.publicPackageStore</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.private-bower.publicPackageStore.getPackage">
+            function <span class="apidocSignatureSpan">private-bower.publicPackageStore.</span>getPackage
+            <span class="apidocSignatureSpan">(packageName)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.private-bower.publicPackageStore.searchPackage">
+            function <span class="apidocSignatureSpan">private-bower.publicPackageStore.</span>searchPackage
+            <span class="apidocSignatureSpan">(name)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.private-bower.publicPackageStore.shutDown">
+            function <span class="apidocSignatureSpan">private-bower.publicPackageStore.</span>shutDown
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.private-bower.publicPackageStore.start">
+            function <span class="apidocSignatureSpan">private-bower.publicPackageStore.</span>start
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.private-bower.repoCacheHandler">module private-bower.repoCacheHandler</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.private-bower.repoCacheHandler.getLatestForRepos">
+            function <span class="apidocSignatureSpan">private-bower.repoCacheHandler.</span>getLatestForRepos
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.private-bower.repoCacheHandler.getRepoAllCaches">
+            function <span class="apidocSignatureSpan">private-bower.repoCacheHandler.</span>getRepoAllCaches
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.private-bower.repoCacheHandler.getRepoCache">
+            function <span class="apidocSignatureSpan">private-bower.repoCacheHandler.</span>getRepoCache
+            <span class="apidocSignatureSpan">(repoUrl)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.private-bower.repoCacheHandler.removePackages">
+            function <span class="apidocSignatureSpan">private-bower.repoCacheHandler.</span>removePackages
+            <span class="apidocSignatureSpan">(packageNames)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.private-bower.repoCacheHandler.shutDown">
+            function <span class="apidocSignatureSpan">private-bower.repoCacheHandler.</span>shutDown
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.private-bower.repoCacheHandler.start">
+            function <span class="apidocSignatureSpan">private-bower.repoCacheHandler.</span>start
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.private-bower.svnPackageDetailsProvider">module private-bower.svnPackageDetailsProvider</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.private-bower.svnPackageDetailsProvider.getPackageDetails">
+            function <span class="apidocSignatureSpan">private-bower.svnPackageDetailsProvider.</span>getPackageDetails
+            <span class="apidocSignatureSpan">(packageUrl)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.private-bower.utils">module private-bower.utils</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.private-bower.utils.exec">
+            function <span class="apidocSignatureSpan">private-bower.utils.</span>exec
+            <span class="apidocSignatureSpan">(command, cwd)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.private-bower.utils.extend">
+            function <span class="apidocSignatureSpan">private-bower.utils.</span>extend
+            <span class="apidocSignatureSpan">(destination)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.private-bower.utils.getChildDirectories">
+            function <span class="apidocSignatureSpan">private-bower.utils.</span>getChildDirectories
+            <span class="apidocSignatureSpan">(directory)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.private-bower.utils.getRandomString">
+            function <span class="apidocSignatureSpan">private-bower.utils.</span>getRandomString
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.private-bower.utils.removeDirectory">
+            function <span class="apidocSignatureSpan">private-bower.utils.</span>removeDirectory
+            <span class="apidocSignatureSpan">(dirPath)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.private-bower.utils.startDetachedChildProcess">
+            function <span class="apidocSignatureSpan">private-bower.utils.</span>startDetachedChildProcess
+            <span class="apidocSignatureSpan">(command, args)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">private-bower.utils.</span>dirname</span>
+
+        </li>
+
     </ol></li>
 
 </ol></div>
 
 <div class="apidocSectionDiv">
 <h1><a href="#apidoc.module.private-bower" id="apidoc.module.private-bower">module private-bower</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.private-bower.controller" id="apidoc.element.private-bower.controller">
+        function <span class="apidocSignatureSpan">private-bower.</span>controller
+        <span class="apidocSignatureSpan">(basePath)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Controller(basePath) {
+    this.basePath = basePath;
+
+    this.router = Router();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+
+
+
+
+
+angular.module(&#x27;PrivateBower&#x27;)
+    .<span class="apidocCodeKeywordSpan">controller</span>(&#x27;authenticationController&#x27;, function($q, $http, userContextService
+, notAuthenticatedInterceptor) {
+        var self = angular.extend(this, {
+error: null,
+originalCallRejection: null,
+authenticationDeferred: null,
+authenticationDialogOpened: false,
+
+authenticate: _authenticate,
+...</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.private-bower.application" id="apidoc.module.private-bower.application">module private-bower.application</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.private-bower.application.addMiddleware" id="apidoc.element.private-bower.application.addMiddleware">
+        function <span class="apidocSignatureSpan">private-bower.application.</span>addMiddleware
+        <span class="apidocSignatureSpan">(middleware)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _addMiddleware(middleware) {
+    if (_siteBaseUrl) {
+        _serverApp.use(_siteBaseUrl, middleware);
+    }
+    else {
+        _serverApp.use(middleware);
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+if(_config.repositoryCache &#x26;&#x26; _config.repositoryCache.enabled) {
+    application.startPublicRepositoryCache(_config.repoCacheOptions);
+}
+    }
+
+    function _initializeService() {
+application.<span class="apidocCodeKeywordSpan">addMiddleware</span>(bodyParser.urlencoded({
+    extended: true
+}));
+application.addMiddleware(bodyParser.json());
+
+application.serveStatic(path.join(utils.dirname, &#x27;../site&#x27;));
+
+application.loadControllers(path.join(utils.dirname, &#x27;api/controllers&#x27;));
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.private-bower.application.addMiddlewareWithMount" id="apidoc.element.private-bower.application.addMiddlewareWithMount">
+        function <span class="apidocSignatureSpan">private-bower.application.</span>addMiddlewareWithMount
+        <span class="apidocSignatureSpan">(route, middleware)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _addMiddlewareWithMount(route, middleware) {
+    _serverApp.use(route, middleware);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+application.addMiddleware(bodyParser.json());
+
+application.serveStatic(path.join(utils.dirname, &#x27;../site&#x27;));
+
+application.loadControllers(path.join(utils.dirname, &#x27;api/controllers&#x27;));
+
+if (_config.server.siteBaseURL) {
+    application.<span class="apidocCodeKeywordSpan">addMiddlewareWithMount</span>(&#x27;/&#x27;, function redirectToBaseUrl(req,
+res, next) {
+        res.redirect(_config.server.siteBaseURL);
+    });
+}
+
+application.addMiddleware(function errorHandler(err, req, res, next) {
+    logger.error(err);
+    logger.error(err.stack);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.private-bower.application.listen" id="apidoc.element.private-bower.application.listen">
+        function <span class="apidocSignatureSpan">private-bower.application.</span>listen
+        <span class="apidocSignatureSpan">(port, hostName)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _listen(port, hostName) {
+    _listeningServer = _serverApp.listen(port, hostName);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+}
+
+function _startPublicRepositoryCache(repoCacheOptions) {
+    repoCacheHandler.start(repoCacheOptions);
+}
+
+function _listen(port, hostName) {
+    _listeningServer = _serverApp.<span class="apidocCodeKeywordSpan">listen</span>(port, hostName);
+}
+
+function _serveStatic(staticPath) {
+    _addMiddleware(_staticHandler(staticPath));
+}
+
+function _addMiddleware(middleware) {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.private-bower.application.loadControllers" id="apidoc.element.private-bower.application.loadControllers">
+        function <span class="apidocSignatureSpan">private-bower.application.</span>loadControllers
+        <span class="apidocSignatureSpan">(controllersRoot)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _loadControllers(controllersRoot) {
+    fs.readdirSync(controllersRoot).forEach(loadControllerAtByName);
+
+    function loadControllerAtByName(controllerPath) {
+        var controller = require(path.join(controllersRoot, controllerPath));
+        controller.bind(_serverApp, _siteBaseUrl);
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+application.addMiddleware(bodyParser.urlencoded({
+    extended: true
+}));
+application.addMiddleware(bodyParser.json());
+
+application.serveStatic(path.join(utils.dirname, &#x27;../site&#x27;));
+
+application.<span class="apidocCodeKeywordSpan">loadControllers</span>(path.join(utils.dirname, &#x27;api/controllers&#x27;));
+
+if (_config.server.siteBaseURL) {
+    application.addMiddlewareWithMount(&#x27;/&#x27;, function redirectToBaseUrl(req, res, next) {
+        res.redirect(_config.server.siteBaseURL);
+    });
+}
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.private-bower.application.restart" id="apidoc.element.private-bower.application.restart">
+        function <span class="apidocSignatureSpan">private-bower.application.</span>restart
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _restart() {
+    logger.log(&#x27;Shutting down server for restart&#x27;);
+
+    _shutDown();
+
+    logger.log(&#x27;Restarting private-bower with config set to &#x27; + configurationManager.configPath);
+
+    utils.startDetachedChildProcess(&#x27;private-bower&#x27;, [&#x27;--config&#x27;,  configurationManager.configPath]);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.private-bower.application.serveStatic" id="apidoc.element.private-bower.application.serveStatic">
+        function <span class="apidocSignatureSpan">private-bower.application.</span>serveStatic
+        <span class="apidocSignatureSpan">(staticPath)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _serveStatic(staticPath) {
+    _addMiddleware(_staticHandler(staticPath));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+    function _initializeService() {
+application.addMiddleware(bodyParser.urlencoded({
+    extended: true
+}));
+application.addMiddleware(bodyParser.json());
+
+application.<span class="apidocCodeKeywordSpan">serveStatic</span>(path.join(utils.dirname, &#x27;../site&#x27;));
+
+application.loadControllers(path.join(utils.dirname, &#x27;api/controllers&#x27;));
+
+if (_config.server.siteBaseURL) {
+    application.addMiddlewareWithMount(&#x27;/&#x27;, function redirectToBaseUrl(req, res, next) {
+        res.redirect(_config.server.siteBaseURL);
+    });
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.private-bower.application.setup" id="apidoc.element.private-bower.application.setup">
+        function <span class="apidocSignatureSpan">private-bower.application.</span>setup
+        <span class="apidocSignatureSpan">(serverApp, staticHandler, siteBaseUrl)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _setup(serverApp, staticHandler, siteBaseUrl) {
+    _serverApp = serverApp;
+    _staticHandler = staticHandler;
+    _siteBaseUrl = siteBaseUrl;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    var serverApp = Express();
+
+    var defaultConfigPath = path.join(utils.dirname, &#x27;../bower.conf.json&#x27;);
+    configurationManager.loadConfiguration(configPath || argv.config || defaultConfigPath);
+
+    _config = configurationManager.config;
+
+    application.<span class="apidocCodeKeywordSpan">setup</span>(serverApp, Express.static, _config.server.siteBaseURL);
+
+    _initializePackageStores();
+    _initializeService();
+
+    logger.log(&#x27;private-bower server started&#x27;);
+}
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.private-bower.application.shutDown" id="apidoc.element.private-bower.application.shutDown">
+        function <span class="apidocSignatureSpan">private-bower.application.</span>shutDown
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _shutDown() {
+    logger.log(&#x27;Shutting down private-bower&#x27;);
+    if(_listeningServer){
+        _listeningServer.close();
+    }
+
+    publicPackageStore.shutDown();
+
+    if(_repoCacheHandler) {
+        _repoCacheHandler.shutDown();
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+function _shutDown() {
+    logger.log(&#x27;Shutting down private-bower&#x27;);
+    if(_listeningServer){
+        _listeningServer.close();
+    }
+
+    publicPackageStore.<span class="apidocCodeKeywordSpan">shutDown</span>();
+
+    if(_repoCacheHandler) {
+        _repoCacheHandler.shutDown();
+    }
+}
+
+function _restart() {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.private-bower.application.startPrivatePackageStore" id="apidoc.element.private-bower.application.startPrivatePackageStore">
+        function <span class="apidocSignatureSpan">private-bower.application.</span>startPrivatePackageStore
+        <span class="apidocSignatureSpan">(registryFile)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _startPrivatePackageStore(registryFile) {
+    privatePackageStore.start({
+        persistFilePath: registryFile
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+_initializePackageStores();
+_initializeService();
+
+logger.log(&#x27;private-bower server started&#x27;);
+    }
+
+    function _initializePackageStores() {
+application.<span class="apidocCodeKeywordSpan">startPrivatePackageStore</span>(_config.registryFile);
+
+if(!_config.public.disabled) {
+    application.startPublicPackageStore();
+}
+
+if(_config.repositoryCache &#x26;&#x26; _config.repositoryCache.enabled) {
+    application.startPublicRepositoryCache(_config.repoCacheOptions);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.private-bower.application.startPublicPackageStore" id="apidoc.element.private-bower.application.startPublicPackageStore">
+        function <span class="apidocSignatureSpan">private-bower.application.</span>startPublicPackageStore
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _startPublicPackageStore() {
+    return publicPackageStore.start();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    logger.log(&#x27;private-bower server started&#x27;);
+}
+
+function _initializePackageStores() {
+    application.startPrivatePackageStore(_config.registryFile);
+
+    if(!_config.public.disabled) {
+        application.<span class="apidocCodeKeywordSpan">startPublicPackageStore</span>();
+    }
+
+    if(_config.repositoryCache &#x26;&#x26; _config.repositoryCache.enabled) {
+        application.startPublicRepositoryCache(_config.repoCacheOptions);
+    }
+}
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.private-bower.application.startPublicRepositoryCache" id="apidoc.element.private-bower.application.startPublicRepositoryCache">
+        function <span class="apidocSignatureSpan">private-bower.application.</span>startPublicRepositoryCache
+        <span class="apidocSignatureSpan">(repoCacheOptions)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _startPublicRepositoryCache(repoCacheOptions) {
+    repoCacheHandler.start(repoCacheOptions);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    application.startPrivatePackageStore(_config.registryFile);
+
+    if(!_config.public.disabled) {
+        application.startPublicPackageStore();
+    }
+
+    if(_config.repositoryCache &#x26;&#x26; _config.repositoryCache.enabled) {
+        application.<span class="apidocCodeKeywordSpan">startPublicRepositoryCache</span>(_config.repoCacheOptions);
+    }
+}
+
+function _initializeService() {
+    application.addMiddleware(bodyParser.urlencoded({
+        extended: true
+    }));
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.private-bower.configurationManager" id="apidoc.module.private-bower.configurationManager">module private-bower.configurationManager</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.private-bower.configurationManager.loadConfiguration" id="apidoc.element.private-bower.configurationManager.loadConfiguration">
+        function <span class="apidocSignatureSpan">private-bower.configurationManager.</span>loadConfiguration
+        <span class="apidocSignatureSpan">(configPath)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _loadConfiguration(configPath) {
+    if(!fs.existsSync(configPath)) {
+        logger.error(&#x27;config file not found at &#x27; + configPath);
+    }
+
+    self.configPath = configPath;
+
+    var configDirectory = path.join(configPath, &#x27;../&#x27;);
+
+    var json = fs.readFileSync(configPath).toString();
+    var configFile = JSON.parse(json);
+
+    utils.extend(self.config, configFile);
+
+    setConfigValues();
+    configureLog4Js();
+
+    function setConfigValues() {
+        self.config.registryFile = getRelativeFilePath(configFile.registryFile || &#x27;./bowerRepository.json&#x27;);
+        self.config.server = self.config.server || {};
+        self.config.server.port = utils.process.env.PORT || self.config.server.port || self.config.port;
+        self.config.server.hostName = utils.process.env.IP || self.config.server.hostName || self.config.hostName || &#x27;0.0.0.0&#x27;;
+        self.config.server.siteBaseURL = self.config.server.siteBaseURL || null;
+
+        self.config.public = self.config.public || {};
+
+        self.config.public.registryFile = getRelativeFilePath(configFile.public.registryFile || &#x27;./bowerRepositoryPublic.json&#x27;);
+        self.config.public.registry = self.config.public.registry || &#x27;https://bower.herokuapp.com/packages&#x27;;
+
+        self.config.public.whitelist = self.config.public.whitelist || [];
+        self.config.public.whitelist.enabled = !!self.config.public.whitelist.length;
+
+        self.config.public.blacklist = self.config.public.blacklist || [];
+        self.config.public.blacklist.enabled = !!self.config.public.blacklist.length;
+
+        self.config.repoCacheOptions = {};
+
+        if(self.config.repositoryCache.svn &#x26;&#x26; self.config.repositoryCache.svn.enabled) {
+            self.config.repoCacheOptions.svn = {
+                repoCacheRoot: getRelativeFilePath(self.config.repositoryCache.svn.cacheDirectory || &#x27;./svnRepoCache&#x27;),
+                hostName: self.config.repositoryCache.svn.host,
+                port: self.config.repositoryCache.svn.port || 7891,
+                protocol: self.config.repositoryCache.svn.protocol || &#x27;svn&#x27;,
+                refreshDisabled: self.config.repositoryCache.svn.refreshDisabled || false,
+                refreshTimeout: self.config.repositoryCache.svn.refreshTimeout || 10,
+                parameters: self.config.repositoryCache.svn.parameters
+            };
+        }
+
+        if(self.config.repositoryCache.git &#x26;&#x26; self.config.repositoryCache.git.enabled) {
+            self.config.repoCacheOptions.git = {
+                repoCacheRoot: getRelativeFilePath(self.config.repositoryCache.git.cacheDirectory || &#x27;./gitRepoCache&#x27;),
+                hostName: self.config.repositoryCache.git.host,
+                publicAccessURL: self.config.repositoryCache.git.publicAccessURL || null,
+                port: self.config.repositoryCache.git.port || 6789,
+                protocol: self.config.repositoryCache.git.protocol || &#x27;git&#x27;,
+                refreshDisabled: self.config.repositoryCache.git.refreshDisabled || false,
+                refreshTimeout: self.config.repositoryCache.git.refreshTimeout || 10,
+                parameters: self.config.repositoryCache.git.parameters
+            };
+        }
+
+        self.config.repositoryCache.enabled = self.config.repoCacheOptions.svn || self.config.repoCacheOptions.git;
+
+        function getRelativeFilePath(filePath) {
+            if((path.isAbsolute &#x26;&#x26; path.isAbsolute(filePath)) || pathIsAbsolute(filePath)) {
+                return filePath;
+            }
+
+            return path.resolve(path.join(configDirectory, filePath));
+        }
+    }
+
+    function configureLog4Js() {
+        if(self.config.log4js &#x26;&#x26; self.config.log4js.enabled)  {
+            log4js.configure(self.config.log4js.configPath);
+        }
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+_handleErrors();
+_handleShutDown();
+
+var serverApp = Express();
+
+var defaultConfigPath = path.join(utils.dirname, &#x27;../bower.conf.json&#x27;);
+configurationManager.<span class="apidocCodeKeywordSpan">loadConfiguration</span>(configPath || argv.config || defaultConfigPath
+);
+
+_config = configurationManager.config;
+
+application.setup(serverApp, Express.static, _config.server.siteBaseURL);
+
+_initializePackageStores();
+_initializeService();
+...</pre></li>
+    </ul>
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.private-bower.controller" id="apidoc.module.private-bower.controller">module private-bower.controller</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.private-bower.controller.controller" id="apidoc.element.private-bower.controller.controller">
+        function <span class="apidocSignatureSpan">private-bower.</span>controller
+        <span class="apidocSignatureSpan">(basePath)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Controller(basePath) {
+    this.basePath = basePath;
+
+    this.router = Router();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+
+
+
+
+
+angular.module(&#x27;PrivateBower&#x27;)
+    .<span class="apidocCodeKeywordSpan">controller</span>(&#x27;authenticationController&#x27;, function($q, $http, userContextService
+, notAuthenticatedInterceptor) {
+        var self = angular.extend(this, {
+error: null,
+originalCallRejection: null,
+authenticationDeferred: null,
+authenticationDialogOpened: false,
+
+authenticate: _authenticate,
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.private-bower.controller.prototype" id="apidoc.module.private-bower.controller.prototype">module private-bower.controller.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.private-bower.controller.prototype.bind" id="apidoc.element.private-bower.controller.prototype.bind">
+        function <span class="apidocSignatureSpan">private-bower.controller.prototype.</span>bind
+        <span class="apidocSignatureSpan">(app, siteBasePath)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">bind = function (app, siteBasePath) {
+    if (siteBasePath) {
+        this.basePath = siteBasePath + this.basePath;
+    }
+    app.use(this.basePath, this.router);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+}
+
+function _loadControllers(controllersRoot) {
+    fs.readdirSync(controllersRoot).forEach(loadControllerAtByName);
+
+    function loadControllerAtByName(controllerPath) {
+        var controller = require(path.join(controllersRoot, controllerPath));
+        controller.<span class="apidocCodeKeywordSpan">bind</span>(_serverApp, _siteBaseUrl);
+    }
+}
+
+function _shutDown() {
+    logger.log(&#x27;Shutting down private-bower&#x27;);
+    if(_listeningServer){
+        _listeningServer.close();
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.private-bower.controller.prototype.delete" id="apidoc.element.private-bower.controller.prototype.delete">
+        function <span class="apidocSignatureSpan">private-bower.controller.prototype.</span>delete
+        <span class="apidocSignatureSpan">(path, middleware, handler)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">delete = function (path, middleware, handler) {
+    if(handler) {
+        this.router.delete(path, middleware, handler);
+    }
+    else {
+        this.router.delete(path, middleware);
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+        }
+
+        function _cancelRemovePackageClick() {
+            self.removePackageDialogOpened = false;
+        }
+
+        function _removePackage(packageName) {
+            $http.<span class="apidocCodeKeywordSpan">delete</span>(&#x27;packages/&#x27; + packageName)
+.success(function() {
+    self.packageToRemove = null;
+    self.removePackageDialogOpened = false;
+
+    _getPackages();
+})
+.error(function(error) {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.private-bower.controller.prototype.get" id="apidoc.element.private-bower.controller.prototype.get">
+        function <span class="apidocSignatureSpan">private-bower.controller.prototype.</span>get
+        <span class="apidocSignatureSpan">(path, middleware, handler)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">get = function (path, middleware, handler) {
+    if(handler) {
+        this.router.get(path, middleware, handler);
+    }
+    else {
+        this.router.get(path, middleware);
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+        _init();
+        function _init() {
+            _getPackages();
+        }
+
+        function _getPackages() {
+            $http.<span class="apidocCodeKeywordSpan">get</span>(&#x27;packages&#x27;)
+.success(function(packages) {
+    self.packages = packages.map(function(pack) {
+        pack.siteUrl = pack.url.replace(&#x27;git://&#x27;, &#x27;https://&#x27;);
+
+        return pack;
+    });
+})
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.private-bower.controller.prototype.post" id="apidoc.element.private-bower.controller.prototype.post">
+        function <span class="apidocSignatureSpan">private-bower.controller.prototype.</span>post
+        <span class="apidocSignatureSpan">(path, middleware, handler)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">post = function (path, middleware, handler) {
+    if(handler) {
+        this.router.post(path, middleware, handler);
+    }
+    else {
+        this.router.post(path, middleware);
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+        }
+
+        function _cancelAddPackageClick() {
+            self.addPackageDialogOpened = false;
+        }
+
+        function _addPackage(packageName, packageUrl) {
+            $http.<span class="apidocCodeKeywordSpan">post</span>(&#x27;packages/&#x27; + packageName, {
+url: packageUrl
+            })
+.success(function() {
+    self.addPackageDialogOpened = false;
+
+    _getPackages();
+})
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.private-bower.controller.prototype.put" id="apidoc.element.private-bower.controller.prototype.put">
+        function <span class="apidocSignatureSpan">private-bower.controller.prototype.</span>put
+        <span class="apidocSignatureSpan">(path, middleware, handler)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">put = function (path, middleware, handler) {
+    if(handler) {
+        this.router.put(path, middleware, handler);
+    }
+    else {
+        this.router.put(path, middleware);
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    }
+    else {
+        this.router.post(path, middleware);
+    }
+},
+put: function(path, middleware, handler) {
+    if(handler) {
+        this.router.<span class="apidocCodeKeywordSpan">put</span>(path, middleware, handler);
+    }
+    else {
+        this.router.put(path, middleware);
+    }
+},
+delete: function(path, middleware, handler) {
+    if(handler) {
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.private-bower.gitPackageDetailsProvider" id="apidoc.module.private-bower.gitPackageDetailsProvider">module private-bower.gitPackageDetailsProvider</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.private-bower.gitPackageDetailsProvider.getPackageDetails" id="apidoc.element.private-bower.gitPackageDetailsProvider.getPackageDetails">
+        function <span class="apidocSignatureSpan">private-bower.gitPackageDetailsProvider.</span>getPackageDetails
+        <span class="apidocSignatureSpan">(packageUrl)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _getPackageDetails(packageUrl) {
+    return new Promise(function(resolve, reject) {
+        var tempName = utils.getRandomString();
+        var gitCloneFolder = path.join(tempFolder, tempName);
+
+        utils.exec(&#x27;git clone {0} {1} --depth=1&#x27;.format(packageUrl, gitCloneFolder))
+            .then(function() {
+                var bowerJsonLocation = path.join(gitCloneFolder, &#x27;bower.json&#x27;);
+
+                var fileContent = fs.readFileSync(bowerJsonLocation);
+                var bowerJson = JSON.parse(fileContent);
+
+                utils.removeDirectory(gitCloneFolder);
+
+                resolve(bowerJson);
+            })
+            .catch(reject);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var SvnPackageDetailsProvider = require(&#x27;./svnPackageDetailsProvider&#x27;);
+
+var utils = require(&#x27;../infrastructure/utils&#x27;);
+
+module.exports = function PackageDetailsProvider() {
+function _getPackageDetails(packageUrl) {
+    if(packageUrl.startsWith(&#x27;svn+&#x27;)) {
+        return SvnPackageDetailsProvider.<span class="apidocCodeKeywordSpan">getPackageDetails</span>(packageUrl);
+    }
+    return GitPackageDetailsProvider.getPackageDetails(packageUrl);
+}
+
+return {
+    getPackageDetails: _getPackageDetails
+};
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.private-bower.logger" id="apidoc.module.private-bower.logger">module private-bower.logger</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.private-bower.logger.error" id="apidoc.element.private-bower.logger.error">
+        function <span class="apidocSignatureSpan">private-bower.logger.</span>error
+        <span class="apidocSignatureSpan">(text, exception)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _error(text, exception) {
+    _log(text.red);
+
+    console.log(exception);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    if (_config.server.siteBaseURL) {
+        application.addMiddlewareWithMount(&#x27;/&#x27;, function redirectToBaseUrl(req, res, next) {
+            res.redirect(_config.server.siteBaseURL);
+        });
+    }
+
+    application.addMiddleware(function errorHandler(err, req, res, next) {
+        logger.<span class="apidocCodeKeywordSpan">error</span>(err);
+        logger.error(err.stack);
+
+        res.status(500).send(&#x27;Something wen\&#x27;t wrong :(&#x27;);
+    });
+
+    application.listen(_config.server.port, _config.server.hostName);
+}
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.private-bower.logger.log" id="apidoc.element.private-bower.logger.log">
+        function <span class="apidocSignatureSpan">private-bower.logger.</span>log
+        <span class="apidocSignatureSpan">(text)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _log(text) {
+    var timeStamp = moment().format(&#x27;D/M/YY HH:mm:ss&#x27;);
+
+    console.log(&#x27;[bower] &#x27;.green, timeStamp.cyan, &#x27; &#x27;, text);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+function loadControllerAtByName(controllerPath) {
+    var controller = require(path.join(controllersRoot, controllerPath));
+    controller.bind(_serverApp, _siteBaseUrl);
+}
+    }
+
+    function _shutDown() {
+logger.<span class="apidocCodeKeywordSpan">log</span>(&#x27;Shutting down private-bower&#x27;);
+if(_listeningServer){
+    _listeningServer.close();
+}
+
+publicPackageStore.shutDown();
+
+if(_repoCacheHandler) {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.private-bower.logger.logHelp" id="apidoc.element.private-bower.logger.logHelp">
+        function <span class="apidocSignatureSpan">private-bower.logger.</span>logHelp
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _logHelp() {
+    console.log([
+    &#x27;              _          _           _&#x27;,
+    &#x27;     _ __ _ _(_)_ ____ _| |_ ___ ___| |__  _____ __ _____ _ _&#x27;,
+    &#x27;    | \&#x27;_ \\ \&#x27;_| \\ V / _` |  _/ -_)___| \&#x27;_ \\/ _ \\ V  V / -_) \&#x27;_|&#x27;,
+    &#x27;    | .__/_| |_|\\_/\\__,_|\\__\\___|   |_.__/\\___/\\_/\\_/\\___|_|&#x27;,
+    &#x27;    |_|&#x27;,
+    &#x27;usage: private-bower [options]&#x27;,
+        &#x27;&#x27;,
+        &#x27;options:&#x27;,
+        &#x27;  --h --help          Print this list and exit.&#x27;,
+        &#x27;  --config            Path to the config file (Must be a valid json)&#x27;
+    ].join(&#x27;\n&#x27;));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var version = require(&#x27;../package.json&#x27;).version;
+
+module.exports = function Main() {
+    var _config;
+
+    function _start(configPath) {
+if(argv.h || argv.help) {
+    logger.<span class="apidocCodeKeywordSpan">logHelp</span>();
+
+    utils.process.exit();
+}
+if (argv.version) {
+    console.log(version);
+    utils.process.exit();
+}
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.private-bower.packageDetailsProvider" id="apidoc.module.private-bower.packageDetailsProvider">module private-bower.packageDetailsProvider</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.private-bower.packageDetailsProvider.getPackageDetails" id="apidoc.element.private-bower.packageDetailsProvider.getPackageDetails">
+        function <span class="apidocSignatureSpan">private-bower.packageDetailsProvider.</span>getPackageDetails
+        <span class="apidocSignatureSpan">(packageUrl)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _getPackageDetails(packageUrl) {
+    if(packageUrl.startsWith(&#x27;svn+&#x27;)) {
+        return SvnPackageDetailsProvider.getPackageDetails(packageUrl);
+    }
+    return GitPackageDetailsProvider.getPackageDetails(packageUrl);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var SvnPackageDetailsProvider = require(&#x27;./svnPackageDetailsProvider&#x27;);
+
+var utils = require(&#x27;../infrastructure/utils&#x27;);
+
+module.exports = function PackageDetailsProvider() {
+function _getPackageDetails(packageUrl) {
+    if(packageUrl.startsWith(&#x27;svn+&#x27;)) {
+        return SvnPackageDetailsProvider.<span class="apidocCodeKeywordSpan">getPackageDetails</span>(packageUrl);
+    }
+    return GitPackageDetailsProvider.getPackageDetails(packageUrl);
+}
+
+return {
+    getPackageDetails: _getPackageDetails
+};
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.private-bower.packageManager" id="apidoc.module.private-bower.packageManager">module private-bower.packageManager</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.private-bower.packageManager.getPackageDetails" id="apidoc.element.private-bower.packageManager.getPackageDetails">
+        function <span class="apidocSignatureSpan">private-bower.packageManager.</span>getPackageDetails
+        <span class="apidocSignatureSpan">(packageName)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _getPackageDetails(packageName) {
+    return _getPackageForInstall(packageName)
+        .then(function(packageDescription) {
+            return packageDetailsProvider.getPackageDetails(packageDescription.url)
+        });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var SvnPackageDetailsProvider = require(&#x27;./svnPackageDetailsProvider&#x27;);
+
+var utils = require(&#x27;../infrastructure/utils&#x27;);
+
+module.exports = function PackageDetailsProvider() {
+function _getPackageDetails(packageUrl) {
+    if(packageUrl.startsWith(&#x27;svn+&#x27;)) {
+        return SvnPackageDetailsProvider.<span class="apidocCodeKeywordSpan">getPackageDetails</span>(packageUrl);
+    }
+    return GitPackageDetailsProvider.getPackageDetails(packageUrl);
+}
+
+return {
+    getPackageDetails: _getPackageDetails
+};
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.private-bower.packageManager.getPackageForInstall" id="apidoc.element.private-bower.packageManager.getPackageForInstall">
+        function <span class="apidocSignatureSpan">private-bower.packageManager.</span>getPackageForInstall
+        <span class="apidocSignatureSpan">(packageName)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _getPackageForInstall(packageName) {
+    return new Promise(function(resolve, reject) {
+        var privatePackage = privatePackageStore.getPackage(packageName);
+
+        if(privatePackage) {
+            handlePrivatePackage();
+        }
+        else if(canHandlePublicPackage()) {
+            handlePublicPackage();
+        }
+        else {
+            reject();
+        }
+
+        function canHandlePublicPackage() {
+            var isValidByWhitelist = !config.public.whitelist.enabled || config.public.whitelist.indexOf(packageName) &#x3e; -1;
+            var notExcludedByBlacklist = !config.public.blacklist.enabled || config.public.blacklist.indexOf(packageName) !== -1
+;
+
+            return !config.public.disabled &#x26;&#x26; isValidByWhitelist &#x26;&#x26; notExcludedByBlacklist;
+        }
+
+        function handlePrivatePackage() {
+            if(config.repositoryCache &#x26;&#x26; config.repositoryCache.cachePrivate) {
+                if(privatePackage.cachedRepo) {
+                    resolve({
+                        name: packageName,
+                        url: privatePackage.cachedRepo,
+                        hits: privatePackage.hits
+                    });
+                }
+                else if(repoCacheHandler) {
+                    cachePrivateRepoAndSend();
+                }
+                else {
+                    sendPrivatePackage();
+                }
+            }
+            else {
+                sendPrivatePackage();
+            }
+
+            function cachePrivateRepoAndSend() {
+                var repoCache = repoCacheHandler.getRepoCache(privatePackage.url);
+
+                repoCache.cacheRepo(packageName, privatePackage.url)
+                    .then(function(pack) {
+                        privatePackage.cachedRepo = pack.url;
+                        privatePackageStore.persistPackages();
+
+                        resolve({
+                            name: packageName,
+                            url: privatePackage.cachedRepo,
+                            hits: privatePackage.hits
+                        });
+                    })
+                    .catch(sendPrivatePackage);
+            }
+
+            function sendPrivatePackage() {
+                resolve({
+                    name: packageName,
+                    url: privatePackage.url,
+                    hits: privatePackage.hits
+                });
+            }
+        }
+
+        function handlePublicPackage() {
+            var publicPackage = publicPackageStore.getPackage(packageName);
+            if(publicPackage) {
+                if(repoCacheHandler.enabled) {
+                    cachePublicRepo();
+                }
+                else {
+                    resolve(publicPackage);
+                }
+            }
+            else {
+                reject();
+            }
+
+            function cachePublicRepo() {
+                var repoCache = repoCacheHandler.getRepoCache(publicPackage.url);
+
+                repoCache.cacheRepo(packageName, publicPackage.url)
+                    .then(function(pack) {
+                        var privatePackage = {
+                            name: packageName,
+                            url: pack.url,
+                            hits: 1
+                        };
+
+                        privatePackageStore.registerPackages([privatePackage]);
+
+                        resolve({
+                            name: privatePackage.name,
+                            url: privatePackage.url,
+                            hits: privatePackage.hits
+                        });
+                    })
+                    .catch(function() {
+                        resolve(publicPackage);
+                    });
+            }
+        }
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.private-bower.packageManager.getPrivatePackages" id="apidoc.element.private-bower.packageManager.getPrivatePackages">
+        function <span class="apidocSignatureSpan">private-bower.packageManager.</span>getPrivatePackages
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _getPrivatePackages() {
+    var packages = [];
+
+    for(var packageName in privatePackageStore.packages) {
+        if(privatePackageStore.packages.hasOwnProperty(packageName)) {
+            var item = privatePackageStore.packages[packageName];
+
+            packages.push({
+                name: item.name,
+                url: item.url,
+                hits: item.hits
+            });
+        }
+    }
+
+    return packages;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.private-bower.packageManager.refresh" id="apidoc.element.private-bower.packageManager.refresh">
+        function <span class="apidocSignatureSpan">private-bower.packageManager.</span>refresh
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _refresh() {
+    logger.log(&#x27;Refreshing repository&#x27;);
+
+    return repoCacheHandler.getLatestForRepos();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.private-bower.packageManager.registerPackages" id="apidoc.element.private-bower.packageManager.registerPackages">
+        function <span class="apidocSignatureSpan">private-bower.packageManager.</span>registerPackages
+        <span class="apidocSignatureSpan">(packages)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _registerPackages(packages) {
+    privatePackageStore.registerPackages(packages);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    }
+}
+
+return packages;
+    }
+
+    function _registerPackages(packages) {
+privatePackageStore.<span class="apidocCodeKeywordSpan">registerPackages</span>(packages);
+    }
+
+    function _removePackages(packages) {
+privatePackageStore.removePackages(packages);
+
+if(repoCacheHandler.enabled) {
+    repoCacheHandler.removePackages(packages);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.private-bower.packageManager.removePackages" id="apidoc.element.private-bower.packageManager.removePackages">
+        function <span class="apidocSignatureSpan">private-bower.packageManager.</span>removePackages
+        <span class="apidocSignatureSpan">(packages)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _removePackages(packages) {
+    privatePackageStore.removePackages(packages);
+
+    if(repoCacheHandler.enabled) {
+        repoCacheHandler.removePackages(packages);
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+}
+
+function _registerPackages(packages) {
+    privatePackageStore.registerPackages(packages);
+}
+
+function _removePackages(packages) {
+    privatePackageStore.<span class="apidocCodeKeywordSpan">removePackages</span>(packages);
+
+    if(repoCacheHandler.enabled) {
+        repoCacheHandler.removePackages(packages);
+    }
+}
+
+function _searchPackage(searchName) {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.private-bower.packageManager.searchPackage" id="apidoc.element.private-bower.packageManager.searchPackage">
+        function <span class="apidocSignatureSpan">private-bower.packageManager.</span>searchPackage
+        <span class="apidocSignatureSpan">(searchName)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _searchPackage(searchName) {
+    var packages = privatePackageStore.searchPackage(searchName);
+
+    if(!config.public.disabled) {
+        var publicPackages = publicPackageStore.searchPackage(searchName);
+
+        publicPackages = filterOnlyWhitelist(publicPackages);
+
+        publicPackages = filterBlacklist(publicPackages);
+
+        packages = packages.concat(publicPackages);
+    }
+
+    return packages;
+
+    function filterOnlyWhitelist(list) {
+        if(!config.public.whitelist.enabled) {
+            return list;
+        }
+
+        return list.filter(function(packageName) {
+            return config.public.whitelist.indexOf(packageName) &#x3e; -1;
+        });
+    }
+
+    function filterBlacklist(list) {
+        if(!config.public.blacklist.enabled) {
+            return list;
+        }
+
+        return list.filter(function(packageName) {
+            return config.public.blacklist.indexOf(packageName) === -1;
+        });
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+        if(repoCacheHandler.enabled) {
+repoCacheHandler.removePackages(packages);
+        }
+    }
+
+    function _searchPackage(searchName) {
+        var packages = privatePackageStore.<span class="apidocCodeKeywordSpan">searchPackage</span>(searchName);
+
+        if(!config.public.disabled) {
+var publicPackages = publicPackageStore.searchPackage(searchName);
+
+publicPackages = filterOnlyWhitelist(publicPackages);
+
+publicPackages = filterBlacklist(publicPackages);
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.private-bower.privatePackageStore" id="apidoc.module.private-bower.privatePackageStore">module private-bower.privatePackageStore</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.private-bower.privatePackageStore.getPackage" id="apidoc.element.private-bower.privatePackageStore.getPackage">
+        function <span class="apidocSignatureSpan">private-bower.privatePackageStore.</span>getPackage
+        <span class="apidocSignatureSpan">(packageName)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _getPackage(packageName) {
+    var item = self.packages[packageName];
+
+    if(!item) {
+        return null;
+    }
+
+    item.name = packageName;
+    item.hits = item.hits || 0;
+    item.hits++;
+
+    //could use yield
+    setTimeout(_persistPackages, 10);
+
+    return item;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    return packageDetailsProvider.getPackageDetails(packageDescription.url)
+});
+    }
+
+    //TODO: should refactor this
+    function _getPackageForInstall(packageName) {
+        return new Promise(function(resolve, reject) {
+var privatePackage = privatePackageStore.<span class="apidocCodeKeywordSpan">getPackage</span>(packageName);
+
+if(privatePackage) {
+    handlePrivatePackage();
+}
+else if(canHandlePublicPackage()) {
+    handlePublicPackage();
+}
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.private-bower.privatePackageStore.persistPackages" id="apidoc.element.private-bower.privatePackageStore.persistPackages">
+        function <span class="apidocSignatureSpan">private-bower.privatePackageStore.</span>persistPackages
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _persistPackages() {
+    if(fs.existsSync(_options.persistFilePath)) {
+        fs.unlinkSync(_options.persistFilePath);
+    }
+
+    fs.writeFileSync(_options.persistFilePath, JSON.stringify(self.packages, null, &#x27;    &#x27;));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+                function cachePrivateRepoAndSend() {
+                    var repoCache = repoCacheHandler.getRepoCache(privatePackage.url);
+
+                    repoCache.cacheRepo(packageName, privatePackage.url)
+.then(function(pack) {
+    privatePackage.cachedRepo = pack.url;
+    privatePackageStore.<span class="apidocCodeKeywordSpan">persistPackages</span>();
+
+    resolve({
+        name: packageName,
+        url: privatePackage.cachedRepo,
+        hits: privatePackage.hits
+    });
+})
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.private-bower.privatePackageStore.registerPackages" id="apidoc.element.private-bower.privatePackageStore.registerPackages">
+        function <span class="apidocSignatureSpan">private-bower.privatePackageStore.</span>registerPackages
+        <span class="apidocSignatureSpan">(register)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _registerPackages(register) {
+    for(var i = 0, len = register.length; i &#x3c; len; i++) {
+        var registerPackage = register[i];
+
+        if(!registerPackage.name) {
+            logger.log(&#x27;Undefined package name&#x27;);
+
+            continue;
+        }
+
+        self.packages[registerPackage.name] = {
+            name: registerPackage.name,
+            url: registerPackage.url,
+            hits: 0
+        };
+
+        logger.log(&#x27;Registered package: &#x27; + registerPackage.name);
+    }
+
+    _persistPackages();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    }
+}
+
+return packages;
+    }
+
+    function _registerPackages(packages) {
+privatePackageStore.<span class="apidocCodeKeywordSpan">registerPackages</span>(packages);
+    }
+
+    function _removePackages(packages) {
+privatePackageStore.removePackages(packages);
+
+if(repoCacheHandler.enabled) {
+    repoCacheHandler.removePackages(packages);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.private-bower.privatePackageStore.removePackages" id="apidoc.element.private-bower.privatePackageStore.removePackages">
+        function <span class="apidocSignatureSpan">private-bower.privatePackageStore.</span>removePackages
+        <span class="apidocSignatureSpan">(remove)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _removePackages(remove) {
+    for(var i = 0, len = remove.length; i &#x3c; len; i++) {
+        delete self.packages[remove[i]];
+
+        logger.log(&#x27;Removed package: &#x27; + remove[i]);
+    }
+
+    _persistPackages();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+}
+
+function _registerPackages(packages) {
+    privatePackageStore.registerPackages(packages);
+}
+
+function _removePackages(packages) {
+    privatePackageStore.<span class="apidocCodeKeywordSpan">removePackages</span>(packages);
+
+    if(repoCacheHandler.enabled) {
+        repoCacheHandler.removePackages(packages);
+    }
+}
+
+function _searchPackage(searchName) {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.private-bower.privatePackageStore.searchPackage" id="apidoc.element.private-bower.privatePackageStore.searchPackage">
+        function <span class="apidocSignatureSpan">private-bower.privatePackageStore.</span>searchPackage
+        <span class="apidocSignatureSpan">(name)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _searchPackage(name) {
+    var searchName = name.toLowerCase();
+    var packages = [];
+
+    for(var packageName in self.packages) {
+        if(self.packages.hasOwnProperty(packageName) &#x26;&#x26;
+            packageName.toLowerCase().indexOf(searchName) !== -1) {
+
+            var item = self.packages[packageName];
+            packages.push({
+                name: item.name,
+                url: item.url
+            });
+        }
+    }
+
+    return packages;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+        if(repoCacheHandler.enabled) {
+repoCacheHandler.removePackages(packages);
+        }
+    }
+
+    function _searchPackage(searchName) {
+        var packages = privatePackageStore.<span class="apidocCodeKeywordSpan">searchPackage</span>(searchName);
+
+        if(!config.public.disabled) {
+var publicPackages = publicPackageStore.searchPackage(searchName);
+
+publicPackages = filterOnlyWhitelist(publicPackages);
+
+publicPackages = filterBlacklist(publicPackages);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.private-bower.privatePackageStore.start" id="apidoc.element.private-bower.privatePackageStore.start">
+        function <span class="apidocSignatureSpan">private-bower.privatePackageStore.</span>start
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _start(options) {
+    _options = options;
+
+    _loadPackages();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+
+
+
+
+#!/usr/bin/env node
+
+require(&#x27;../lib/main&#x27;)().<span class="apidocCodeKeywordSpan">start</span>();
+...</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.private-bower.publicPackageStore" id="apidoc.module.private-bower.publicPackageStore">module private-bower.publicPackageStore</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.private-bower.publicPackageStore.getPackage" id="apidoc.element.private-bower.publicPackageStore.getPackage">
+        function <span class="apidocSignatureSpan">private-bower.publicPackageStore.</span>getPackage
+        <span class="apidocSignatureSpan">(packageName)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _getPackage(packageName) {
+    return _packages[packageName];
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    return packageDetailsProvider.getPackageDetails(packageDescription.url)
+});
+    }
+
+    //TODO: should refactor this
+    function _getPackageForInstall(packageName) {
+        return new Promise(function(resolve, reject) {
+var privatePackage = privatePackageStore.<span class="apidocCodeKeywordSpan">getPackage</span>(packageName);
+
+if(privatePackage) {
+    handlePrivatePackage();
+}
+else if(canHandlePublicPackage()) {
+    handlePublicPackage();
+}
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.private-bower.publicPackageStore.searchPackage" id="apidoc.element.private-bower.publicPackageStore.searchPackage">
+        function <span class="apidocSignatureSpan">private-bower.publicPackageStore.</span>searchPackage
+        <span class="apidocSignatureSpan">(name)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _searchPackage(name) {
+    var searchName = name.toLowerCase();
+    var packages = [];
+
+    for(var packageName in _packages) {
+        if(_packages.hasOwnProperty(packageName) &#x26;&#x26;
+            packageName.toLowerCase().indexOf(searchName) !== -1) {
+
+            var item = _packages[packageName];
+            packages.push({
+                name: item.name,
+                url: item.url
+            });
+        }
+    }
+
+    return packages;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+        if(repoCacheHandler.enabled) {
+repoCacheHandler.removePackages(packages);
+        }
+    }
+
+    function _searchPackage(searchName) {
+        var packages = privatePackageStore.<span class="apidocCodeKeywordSpan">searchPackage</span>(searchName);
+
+        if(!config.public.disabled) {
+var publicPackages = publicPackageStore.searchPackage(searchName);
+
+publicPackages = filterOnlyWhitelist(publicPackages);
+
+publicPackages = filterBlacklist(publicPackages);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.private-bower.publicPackageStore.shutDown" id="apidoc.element.private-bower.publicPackageStore.shutDown">
+        function <span class="apidocSignatureSpan">private-bower.publicPackageStore.</span>shutDown
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _shutDown() {
+    clearTimeout(_timer);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+function _shutDown() {
+    logger.log(&#x27;Shutting down private-bower&#x27;);
+    if(_listeningServer){
+        _listeningServer.close();
+    }
+
+    publicPackageStore.<span class="apidocCodeKeywordSpan">shutDown</span>();
+
+    if(_repoCacheHandler) {
+        _repoCacheHandler.shutDown();
+    }
+}
+
+function _restart() {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.private-bower.publicPackageStore.start" id="apidoc.element.private-bower.publicPackageStore.start">
+        function <span class="apidocSignatureSpan">private-bower.publicPackageStore.</span>start
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _start() {
+    logger.log(&#x27;Refreshing public packages...&#x27;);
+
+    _publicBowerUrl = config.public.registry;
+
+    _loadPublicRegistryFromCache();
+
+    return _loadPublicPackagesPeriodically();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+
+
+
+
+#!/usr/bin/env node
+
+require(&#x27;../lib/main&#x27;)().<span class="apidocCodeKeywordSpan">start</span>();
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.private-bower.repoCacheHandler" id="apidoc.module.private-bower.repoCacheHandler">module private-bower.repoCacheHandler</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.private-bower.repoCacheHandler.getLatestForRepos" id="apidoc.element.private-bower.repoCacheHandler.getLatestForRepos">
+        function <span class="apidocSignatureSpan">private-bower.repoCacheHandler.</span>getLatestForRepos
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _getLatestForRepos() {
+    return Promise.all(_repoCaches.map(function(repoCache) {
+        return repoCache.getLatestForRepos();
+    }));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+        }
+    });
+}
+
+function _refresh() {
+    logger.log(&#x27;Refreshing repository&#x27;);
+
+    return repoCacheHandler.<span class="apidocCodeKeywordSpan">getLatestForRepos</span>();
+}
+
+return {
+    refresh: _refresh,
+    removePackages: _removePackages,
+    searchPackage: _searchPackage,
+    registerPackages: _registerPackages,
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.private-bower.repoCacheHandler.getRepoAllCaches" id="apidoc.element.private-bower.repoCacheHandler.getRepoAllCaches">
+        function <span class="apidocSignatureSpan">private-bower.repoCacheHandler.</span>getRepoAllCaches
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _getRepoAllCaches() {
+    return _repoCaches;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.private-bower.repoCacheHandler.getRepoCache" id="apidoc.element.private-bower.repoCacheHandler.getRepoCache">
+        function <span class="apidocSignatureSpan">private-bower.repoCacheHandler.</span>getRepoCache
+        <span class="apidocSignatureSpan">(repoUrl)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _getRepoCache(repoUrl) {
+    if(repoUrl.indexOf(&#x27;svn+&#x27;) !== -1) {
+        return _svnRepoCache;
+    }
+
+    return _gitRepoCache;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+                    }
+                }
+                else {
+                    sendPrivatePackage();
+                }
+
+                function cachePrivateRepoAndSend() {
+                    var repoCache = repoCacheHandler.<span class="apidocCodeKeywordSpan">getRepoCache</span>(privatePackage.url);
+
+                    repoCache.cacheRepo(packageName, privatePackage.url)
+                        .then(function(pack) {
+privatePackage.cachedRepo = pack.url;
+privatePackageStore.persistPackages();
+
+resolve({
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.private-bower.repoCacheHandler.removePackages" id="apidoc.element.private-bower.repoCacheHandler.removePackages">
+        function <span class="apidocSignatureSpan">private-bower.repoCacheHandler.</span>removePackages
+        <span class="apidocSignatureSpan">(packageNames)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _removePackages(packageNames) {
+    _repoCaches.forEach(function(repoCache) {
+        packageNames.forEach(function(packageName) {
+            repoCache.removeRepo(packageName);
+        });
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+}
+
+function _registerPackages(packages) {
+    privatePackageStore.registerPackages(packages);
+}
+
+function _removePackages(packages) {
+    privatePackageStore.<span class="apidocCodeKeywordSpan">removePackages</span>(packages);
+
+    if(repoCacheHandler.enabled) {
+        repoCacheHandler.removePackages(packages);
+    }
+}
+
+function _searchPackage(searchName) {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.private-bower.repoCacheHandler.shutDown" id="apidoc.element.private-bower.repoCacheHandler.shutDown">
+        function <span class="apidocSignatureSpan">private-bower.repoCacheHandler.</span>shutDown
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _shutDown() {
+    _repoCaches.forEach(function(repoCache) {
+        repoCache.shutDown();
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+function _shutDown() {
+    logger.log(&#x27;Shutting down private-bower&#x27;);
+    if(_listeningServer){
+        _listeningServer.close();
+    }
+
+    publicPackageStore.<span class="apidocCodeKeywordSpan">shutDown</span>();
+
+    if(_repoCacheHandler) {
+        _repoCacheHandler.shutDown();
+    }
+}
+
+function _restart() {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.private-bower.repoCacheHandler.start" id="apidoc.element.private-bower.repoCacheHandler.start">
+        function <span class="apidocSignatureSpan">private-bower.repoCacheHandler.</span>start
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _start(options) {
+    self.enabled = true;
+
+    if(options.git) {
+        _gitRepoCache = new GitRepoCache(options.git);
+        _repoCaches.push(_gitRepoCache);
+    }
+
+    if(options.svn) {
+        _svnRepoCache = new SvnRepoCache(options.svn);
+        _repoCaches.push(_svnRepoCache);
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+
+
+
+
+#!/usr/bin/env node
+
+require(&#x27;../lib/main&#x27;)().<span class="apidocCodeKeywordSpan">start</span>();
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.private-bower.svnPackageDetailsProvider" id="apidoc.module.private-bower.svnPackageDetailsProvider">module private-bower.svnPackageDetailsProvider</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.private-bower.svnPackageDetailsProvider.getPackageDetails" id="apidoc.element.private-bower.svnPackageDetailsProvider.getPackageDetails">
+        function <span class="apidocSignatureSpan">private-bower.svnPackageDetailsProvider.</span>getPackageDetails
+        <span class="apidocSignatureSpan">(packageUrl)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _getPackageDetails(packageUrl) {
+    return new Promise(function(resolve, reject) {
+        var tempName = utils.getRandomString();
+        var svnCloneFolder = path.join(tempFolder, tempName);
+
+        // remove string &#x27;svn+&#x27; if isn&#x27;t &#x27;ssh&#x27; url.
+        if (packageUrl.indexOf(&#x27;ssh://&#x27;) == -1) {
+            packageUrl = packageUrl.replace(&#x27;svn+&#x27;, &#x27;&#x27;);
+        }
+
+        // set to trunk to get the info.
+        if (packageUrl.slice(-1) === &#x27;/&#x27;) {
+            packageUrl = packageUrl + &#x27;trunk&#x27;;
+        } else {
+            packageUrl = packageUrl + &#x27;/trunk&#x27;;
+        }
+
+        utils.exec(&#x27;svn co {0} {1} --depth files&#x27;.format(packageUrl, svnCloneFolder))
+            .then(function() {
+                var bowerJsonLocation = path.join(svnCloneFolder, &#x27;bower.json&#x27;);
+
+                var fileContent = fs.readFileSync(bowerJsonLocation);
+                var bowerJson = JSON.parse(fileContent);
+
+                utils.removeDirectory(svnCloneFolder);
+
+                resolve(bowerJson);
+            })
+            .catch(reject);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var SvnPackageDetailsProvider = require(&#x27;./svnPackageDetailsProvider&#x27;);
+
+var utils = require(&#x27;../infrastructure/utils&#x27;);
+
+module.exports = function PackageDetailsProvider() {
+function _getPackageDetails(packageUrl) {
+    if(packageUrl.startsWith(&#x27;svn+&#x27;)) {
+        return SvnPackageDetailsProvider.<span class="apidocCodeKeywordSpan">getPackageDetails</span>(packageUrl);
+    }
+    return GitPackageDetailsProvider.getPackageDetails(packageUrl);
+}
+
+return {
+    getPackageDetails: _getPackageDetails
+};
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.private-bower.utils" id="apidoc.module.private-bower.utils">module private-bower.utils</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.private-bower.utils.exec" id="apidoc.element.private-bower.utils.exec">
+        function <span class="apidocSignatureSpan">private-bower.utils.</span>exec
+        <span class="apidocSignatureSpan">(command, cwd)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _exec(command, cwd) {
+    return new Promise(function(resolve, reject) {
+        exec(command, {cwd: cwd}, function(error, stdout, stderr) {
+            if(error) {
+                logger.log(&#x27;Error during &#x22;{0}&#x22; in &#x22;{1}&#x22;.\n\tOutput:\n\t\tstdout: {2}\n\t\tstderr: {3}&#x27;.format(command, cwd, stdout
+, stderr));
+
+                reject(error);
+            }
+            else {
+                resolve(stdout);
+            }
+        });
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+- Added configurable protocol to mirrored packages ([#161](https://github.com/Hacklone/private-bower/issues/161))
+- Fixed error flow when git cloning fails ([#156](https://github.com/Hacklone/private-bower/issues/156))
+
+## 1.1.4 - 2015.08.29.
+
+- enable version consultation ([#168](https://github.com/Hacklone/private-bower/issues/168))
+- Added stdout to log message in case util.<span class="apidocCodeKeywordSpan">exec</span>() fails. ([#164](https://github.com/Hacklone
+/private-bower/issues/164))
+- fixed JSON parse errors ([#170](https://github.com/Hacklone/private-bower/issues/170))
+- never used utils.process.env.PORT ([#159](https://github.com/Hacklone/private-bower/issues/159))
+
+## 1.1.5 - 2015.10.10.
+
+- change registry url ([#179](https://github.com/Hacklone/private-bower/issues/179))
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.private-bower.utils.extend" id="apidoc.element.private-bower.utils.extend">
+        function <span class="apidocSignatureSpan">private-bower.utils.</span>extend
+        <span class="apidocSignatureSpan">(destination)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _extend(destination) {
+    var args = Array.prototype.slice.call(arguments, 1);
+
+    args.forEach(function(srcArg) {
+        extendObject(destination, srcArg);
+    });
+
+    return destination;
+
+    function extendObject(dest, src) {
+        for(var propertyName in src) {
+            if(src.hasOwnProperty(propertyName)) {
+                dest[propertyName] = src[propertyName];
+            }
+        }
+
+        return dest;
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    self.configPath = configPath;
+
+    var configDirectory = path.join(configPath, &#x27;../&#x27;);
+
+    var json = fs.readFileSync(configPath).toString();
+    var configFile = JSON.parse(json);
+
+    utils.<span class="apidocCodeKeywordSpan">extend</span>(self.config, configFile);
+
+    setConfigValues();
+    configureLog4Js();
+
+    function setConfigValues() {
+        self.config.registryFile = getRelativeFilePath(configFile.registryFile || &#x27;./bowerRepository.json&#x27;);
+        self.config.server = self.config.server || {};
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.private-bower.utils.getChildDirectories" id="apidoc.element.private-bower.utils.getChildDirectories">
+        function <span class="apidocSignatureSpan">private-bower.utils.</span>getChildDirectories
+        <span class="apidocSignatureSpan">(directory)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _getChildDirectories(directory) {
+    return fs.readdirSync(directory).filter(function(file) {
+        var filePath = path.join(directory, file);
+
+        return fs.lstatSync(filePath).isDirectory();
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+            mockery.registerMock(&#x27;fs&#x27;, fsMock);
+
+            mockery.resetCache();
+
+            createUtils();
+
+            var resultChildDirectories = utils.<span class="apidocCodeKeywordSpan">getChildDirectories</span>(directoryName);
+
+            expect(resultChildDirectories).to.deep.equal(childDirectories);
+        });
+    });
+
+    //TODO: TEST - removeDirectory
+});
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.private-bower.utils.getRandomString" id="apidoc.element.private-bower.utils.getRandomString">
+        function <span class="apidocSignatureSpan">private-bower.utils.</span>getRandomString
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _getRandomString() {
+    return Math.random().toString(36).substring(2);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var utils = require(&#x27;../infrastructure/utils&#x27;);
+
+module.exports = function GitPackageDetailsProvider() {
+    var tempFolder = path.join(utils.dirname, &#x27;temp/packageDetails&#x27;);
+
+    function _getPackageDetails(packageUrl) {
+        return new Promise(function(resolve, reject) {
+            var tempName = utils.<span class="apidocCodeKeywordSpan">getRandomString</span>();
+            var gitCloneFolder = path.join(tempFolder, tempName);
+
+            utils.exec(&#x27;git clone {0} {1} --depth=1&#x27;.format(packageUrl, gitCloneFolder))
+                .then(function() {
+var bowerJsonLocation = path.join(gitCloneFolder, &#x27;bower.json&#x27;);
+
+var fileContent = fs.readFileSync(bowerJsonLocation);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.private-bower.utils.removeDirectory" id="apidoc.element.private-bower.utils.removeDirectory">
+        function <span class="apidocSignatureSpan">private-bower.utils.</span>removeDirectory
+        <span class="apidocSignatureSpan">(dirPath)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _removeDirectory(dirPath) {
+    if(!fs.existsSync(dirPath)) {
+        return;
+    }
+
+    fs.readdirSync(dirPath).forEach(function(file) {
+        var currentFilePathPath = path.join(dirPath, file);
+
+        if(fs.lstatSync(currentFilePathPath).isDirectory()) {
+            _removeDirectory(currentFilePathPath);
+        }
+        else {
+            fs.unlinkSync(currentFilePathPath);
+        }
+    });
+
+    fs.rmdirSync(dirPath);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+        utils.exec(&#x27;git clone {0} {1} --depth=1&#x27;.format(packageUrl, gitCloneFolder))
+            .then(function() {
+                var bowerJsonLocation = path.join(gitCloneFolder, &#x27;bower.json&#x27;);
+
+                var fileContent = fs.readFileSync(bowerJsonLocation);
+                var bowerJson = JSON.parse(fileContent);
+
+                utils.<span class="apidocCodeKeywordSpan">removeDirectory</span>(gitCloneFolder);
+
+                resolve(bowerJson);
+            })
+            .catch(reject);
+    });
+}
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.private-bower.utils.startDetachedChildProcess" id="apidoc.element.private-bower.utils.startDetachedChildProcess">
+        function <span class="apidocSignatureSpan">private-bower.utils.</span>startDetachedChildProcess
+        <span class="apidocSignatureSpan">(command, args)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _startDetachedChildProcess(command, args) {
+    var child = spawn(command, args, {
+        detached: true
+    });
+
+    child.stdout.pipe(process.stdout);
+    child.stderr.pipe(process.stderr);
+
+    child.unref();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    function _restart() {
+logger.log(&#x27;Shutting down server for restart&#x27;);
+
+_shutDown();
+
+logger.log(&#x27;Restarting private-bower with config set to &#x27; + configurationManager.configPath);
+
+utils.<span class="apidocCodeKeywordSpan">startDetachedChildProcess</span>(&#x27;private-bower&#x27;, [&#x27;--config&#x27;,  configurationManager
+.configPath]);
+    }
+
+    return {
+setup: _setup,
+restart: _restart,
+
+listen: _listen,
+...</pre></li>
+    </ul>
+
+
+
 
 </div>
 

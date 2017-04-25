@@ -1,4 +1,4 @@
-<div class="apidocDiv">
+<html><head></head><body><div class="apidocDiv">
 <style>
 /*csslint
 */
@@ -47,17 +47,10 @@
 }
 </style>
 <h1>api documentation for
-    <a
-
-        href="http://hacklone.github.io/private-bower"
-
-    >private-bower (v1.1.8)</a>
+    <a href="http://hacklone.github.io/private-bower">private-bower (v1.1.8)</a>
 </h1>
 <h4>A simple private bower registry</h4>
-<div class="apidocSectionDiv"><a
-    href="#apidoc.tableOfContents"
-    id="apidoc.tableOfContents"
-><h1>table of contents</h1></a><ol>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
 
     <li class="apidocModuleLi"><a href="#apidoc.module.private-bower">module private-bower</a><ol>
 
@@ -722,8 +715,8 @@
 
 
 
-angular.module(&#x27;PrivateBower&#x27;)
-    .<span class="apidocCodeKeywordSpan">controller</span>(&#x27;authenticationController&#x27;, function($q, $http, userContextService
+angular.module('PrivateBower')
+    .<span class="apidocCodeKeywordSpan">controller</span>('authenticationController', function($q, $http, userContextService
 , notAuthenticatedInterceptor) {
         var self = angular.extend(this, {
 error: null,
@@ -783,7 +776,7 @@ authenticate: _authenticate,
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 
-if(_config.repositoryCache &#x26;&#x26; _config.repositoryCache.enabled) {
+if(_config.repositoryCache &amp;&amp; _config.repositoryCache.enabled) {
     application.startPublicRepositoryCache(_config.repoCacheOptions);
 }
     }
@@ -794,9 +787,9 @@ application.<span class="apidocCodeKeywordSpan">addMiddleware</span>(bodyParser.
 }));
 application.addMiddleware(bodyParser.json());
 
-application.serveStatic(path.join(utils.dirname, &#x27;../site&#x27;));
+application.serveStatic(path.join(utils.dirname, '../site'));
 
-application.loadControllers(path.join(utils.dirname, &#x27;api/controllers&#x27;));
+application.loadControllers(path.join(utils.dirname, 'api/controllers'));
 ...</pre></li>
     </ul>
 
@@ -815,12 +808,12 @@ application.loadControllers(path.join(utils.dirname, &#x27;api/controllers&#x27;
     <li>example usage<pre class="apidocCodePre">...
 application.addMiddleware(bodyParser.json());
 
-application.serveStatic(path.join(utils.dirname, &#x27;../site&#x27;));
+application.serveStatic(path.join(utils.dirname, '../site'));
 
-application.loadControllers(path.join(utils.dirname, &#x27;api/controllers&#x27;));
+application.loadControllers(path.join(utils.dirname, 'api/controllers'));
 
 if (_config.server.siteBaseURL) {
-    application.<span class="apidocCodeKeywordSpan">addMiddlewareWithMount</span>(&#x27;/&#x27;, function redirectToBaseUrl(req,
+    application.<span class="apidocCodeKeywordSpan">addMiddlewareWithMount</span>('/', function redirectToBaseUrl(req,
 res, next) {
         res.redirect(_config.server.siteBaseURL);
     });
@@ -886,12 +879,12 @@ application.addMiddleware(bodyParser.urlencoded({
 }));
 application.addMiddleware(bodyParser.json());
 
-application.serveStatic(path.join(utils.dirname, &#x27;../site&#x27;));
+application.serveStatic(path.join(utils.dirname, '../site'));
 
-application.<span class="apidocCodeKeywordSpan">loadControllers</span>(path.join(utils.dirname, &#x27;api/controllers&#x27;));
+application.<span class="apidocCodeKeywordSpan">loadControllers</span>(path.join(utils.dirname, 'api/controllers'));
 
 if (_config.server.siteBaseURL) {
-    application.addMiddlewareWithMount(&#x27;/&#x27;, function redirectToBaseUrl(req, res, next) {
+    application.addMiddlewareWithMount('/', function redirectToBaseUrl(req, res, next) {
         res.redirect(_config.server.siteBaseURL);
     });
 }
@@ -908,13 +901,13 @@ if (_config.server.siteBaseURL) {
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function _restart() {
-    logger.log(&#x27;Shutting down server for restart&#x27;);
+    logger.log('Shutting down server for restart');
 
     _shutDown();
 
-    logger.log(&#x27;Restarting private-bower with config set to &#x27; + configurationManager.configPath);
+    logger.log('Restarting private-bower with config set to ' + configurationManager.configPath);
 
-    utils.startDetachedChildProcess(&#x27;private-bower&#x27;, [&#x27;--config&#x27;,  configurationManager.configPath]);
+    utils.startDetachedChildProcess('private-bower', ['--config',  configurationManager.configPath]);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -939,12 +932,12 @@ application.addMiddleware(bodyParser.urlencoded({
 }));
 application.addMiddleware(bodyParser.json());
 
-application.<span class="apidocCodeKeywordSpan">serveStatic</span>(path.join(utils.dirname, &#x27;../site&#x27;));
+application.<span class="apidocCodeKeywordSpan">serveStatic</span>(path.join(utils.dirname, '../site'));
 
-application.loadControllers(path.join(utils.dirname, &#x27;api/controllers&#x27;));
+application.loadControllers(path.join(utils.dirname, 'api/controllers'));
 
 if (_config.server.siteBaseURL) {
-    application.addMiddlewareWithMount(&#x27;/&#x27;, function redirectToBaseUrl(req, res, next) {
+    application.addMiddlewareWithMount('/', function redirectToBaseUrl(req, res, next) {
         res.redirect(_config.server.siteBaseURL);
     });
 ...</pre></li>
@@ -967,7 +960,7 @@ if (_config.server.siteBaseURL) {
     <li>example usage<pre class="apidocCodePre">...
     var serverApp = Express();
 
-    var defaultConfigPath = path.join(utils.dirname, &#x27;../bower.conf.json&#x27;);
+    var defaultConfigPath = path.join(utils.dirname, '../bower.conf.json');
     configurationManager.loadConfiguration(configPath || argv.config || defaultConfigPath);
 
     _config = configurationManager.config;
@@ -977,7 +970,7 @@ if (_config.server.siteBaseURL) {
     _initializePackageStores();
     _initializeService();
 
-    logger.log(&#x27;private-bower server started&#x27;);
+    logger.log('private-bower server started');
 }
 ...</pre></li>
     </ul>
@@ -992,7 +985,7 @@ if (_config.server.siteBaseURL) {
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function _shutDown() {
-    logger.log(&#x27;Shutting down private-bower&#x27;);
+    logger.log('Shutting down private-bower');
     if(_listeningServer){
         _listeningServer.close();
     }
@@ -1006,7 +999,7 @@ if (_config.server.siteBaseURL) {
     <li>example usage<pre class="apidocCodePre">...
 
 function _shutDown() {
-    logger.log(&#x27;Shutting down private-bower&#x27;);
+    logger.log('Shutting down private-bower');
     if(_listeningServer){
         _listeningServer.close();
     }
@@ -1040,7 +1033,7 @@ function _restart() {
 _initializePackageStores();
 _initializeService();
 
-logger.log(&#x27;private-bower server started&#x27;);
+logger.log('private-bower server started');
     }
 
     function _initializePackageStores() {
@@ -1050,7 +1043,7 @@ if(!_config.public.disabled) {
     application.startPublicPackageStore();
 }
 
-if(_config.repositoryCache &#x26;&#x26; _config.repositoryCache.enabled) {
+if(_config.repositoryCache &amp;&amp; _config.repositoryCache.enabled) {
     application.startPublicRepositoryCache(_config.repoCacheOptions);
 ...</pre></li>
     </ul>
@@ -1068,7 +1061,7 @@ if(_config.repositoryCache &#x26;&#x26; _config.repositoryCache.enabled) {
     return publicPackageStore.start();
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-    logger.log(&#x27;private-bower server started&#x27;);
+    logger.log('private-bower server started');
 }
 
 function _initializePackageStores() {
@@ -1078,7 +1071,7 @@ function _initializePackageStores() {
         application.<span class="apidocCodeKeywordSpan">startPublicPackageStore</span>();
     }
 
-    if(_config.repositoryCache &#x26;&#x26; _config.repositoryCache.enabled) {
+    if(_config.repositoryCache &amp;&amp; _config.repositoryCache.enabled) {
         application.startPublicRepositoryCache(_config.repoCacheOptions);
     }
 }
@@ -1104,7 +1097,7 @@ function _initializePackageStores() {
         application.startPublicPackageStore();
     }
 
-    if(_config.repositoryCache &#x26;&#x26; _config.repositoryCache.enabled) {
+    if(_config.repositoryCache &amp;&amp; _config.repositoryCache.enabled) {
         application.<span class="apidocCodeKeywordSpan">startPublicRepositoryCache</span>(_config.repoCacheOptions);
     }
 }
@@ -1132,12 +1125,12 @@ function _initializeService() {
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function _loadConfiguration(configPath) {
     if(!fs.existsSync(configPath)) {
-        logger.error(&#x27;config file not found at &#x27; + configPath);
+        logger.error('config file not found at ' + configPath);
     }
 
     self.configPath = configPath;
 
-    var configDirectory = path.join(configPath, &#x27;../&#x27;);
+    var configDirectory = path.join(configPath, '../');
 
     var json = fs.readFileSync(configPath).toString();
     var configFile = JSON.parse(json);
@@ -1148,16 +1141,16 @@ function _initializeService() {
     configureLog4Js();
 
     function setConfigValues() {
-        self.config.registryFile = getRelativeFilePath(configFile.registryFile || &#x27;./bowerRepository.json&#x27;);
+        self.config.registryFile = getRelativeFilePath(configFile.registryFile || './bowerRepository.json');
         self.config.server = self.config.server || {};
         self.config.server.port = utils.process.env.PORT || self.config.server.port || self.config.port;
-        self.config.server.hostName = utils.process.env.IP || self.config.server.hostName || self.config.hostName || &#x27;0.0.0.0&#x27;;
+        self.config.server.hostName = utils.process.env.IP || self.config.server.hostName || self.config.hostName || '0.0.0.0';
         self.config.server.siteBaseURL = self.config.server.siteBaseURL || null;
 
         self.config.public = self.config.public || {};
 
-        self.config.public.registryFile = getRelativeFilePath(configFile.public.registryFile || &#x27;./bowerRepositoryPublic.json&#x27;);
-        self.config.public.registry = self.config.public.registry || &#x27;https://bower.herokuapp.com/packages&#x27;;
+        self.config.public.registryFile = getRelativeFilePath(configFile.public.registryFile || './bowerRepositoryPublic.json');
+        self.config.public.registry = self.config.public.registry || 'https://bower.herokuapp.com/packages';
 
         self.config.public.whitelist = self.config.public.whitelist || [];
         self.config.public.whitelist.enabled = !!self.config.public.whitelist.length;
@@ -1167,25 +1160,25 @@ function _initializeService() {
 
         self.config.repoCacheOptions = {};
 
-        if(self.config.repositoryCache.svn &#x26;&#x26; self.config.repositoryCache.svn.enabled) {
+        if(self.config.repositoryCache.svn &amp;&amp; self.config.repositoryCache.svn.enabled) {
             self.config.repoCacheOptions.svn = {
-                repoCacheRoot: getRelativeFilePath(self.config.repositoryCache.svn.cacheDirectory || &#x27;./svnRepoCache&#x27;),
+                repoCacheRoot: getRelativeFilePath(self.config.repositoryCache.svn.cacheDirectory || './svnRepoCache'),
                 hostName: self.config.repositoryCache.svn.host,
                 port: self.config.repositoryCache.svn.port || 7891,
-                protocol: self.config.repositoryCache.svn.protocol || &#x27;svn&#x27;,
+                protocol: self.config.repositoryCache.svn.protocol || 'svn',
                 refreshDisabled: self.config.repositoryCache.svn.refreshDisabled || false,
                 refreshTimeout: self.config.repositoryCache.svn.refreshTimeout || 10,
                 parameters: self.config.repositoryCache.svn.parameters
             };
         }
 
-        if(self.config.repositoryCache.git &#x26;&#x26; self.config.repositoryCache.git.enabled) {
+        if(self.config.repositoryCache.git &amp;&amp; self.config.repositoryCache.git.enabled) {
             self.config.repoCacheOptions.git = {
-                repoCacheRoot: getRelativeFilePath(self.config.repositoryCache.git.cacheDirectory || &#x27;./gitRepoCache&#x27;),
+                repoCacheRoot: getRelativeFilePath(self.config.repositoryCache.git.cacheDirectory || './gitRepoCache'),
                 hostName: self.config.repositoryCache.git.host,
                 publicAccessURL: self.config.repositoryCache.git.publicAccessURL || null,
                 port: self.config.repositoryCache.git.port || 6789,
-                protocol: self.config.repositoryCache.git.protocol || &#x27;git&#x27;,
+                protocol: self.config.repositoryCache.git.protocol || 'git',
                 refreshDisabled: self.config.repositoryCache.git.refreshDisabled || false,
                 refreshTimeout: self.config.repositoryCache.git.refreshTimeout || 10,
                 parameters: self.config.repositoryCache.git.parameters
@@ -1195,7 +1188,7 @@ function _initializeService() {
         self.config.repositoryCache.enabled = self.config.repoCacheOptions.svn || self.config.repoCacheOptions.git;
 
         function getRelativeFilePath(filePath) {
-            if((path.isAbsolute &#x26;&#x26; path.isAbsolute(filePath)) || pathIsAbsolute(filePath)) {
+            if((path.isAbsolute &amp;&amp; path.isAbsolute(filePath)) || pathIsAbsolute(filePath)) {
                 return filePath;
             }
 
@@ -1204,7 +1197,7 @@ function _initializeService() {
     }
 
     function configureLog4Js() {
-        if(self.config.log4js &#x26;&#x26; self.config.log4js.enabled)  {
+        if(self.config.log4js &amp;&amp; self.config.log4js.enabled)  {
             log4js.configure(self.config.log4js.configPath);
         }
     }
@@ -1216,7 +1209,7 @@ _handleShutDown();
 
 var serverApp = Express();
 
-var defaultConfigPath = path.join(utils.dirname, &#x27;../bower.conf.json&#x27;);
+var defaultConfigPath = path.join(utils.dirname, '../bower.conf.json');
 configurationManager.<span class="apidocCodeKeywordSpan">loadConfiguration</span>(configPath || argv.config || defaultConfigPath
 );
 
@@ -1259,8 +1252,8 @@ _initializeService();
 
 
 
-angular.module(&#x27;PrivateBower&#x27;)
-    .<span class="apidocCodeKeywordSpan">controller</span>(&#x27;authenticationController&#x27;, function($q, $http, userContextService
+angular.module('PrivateBower')
+    .<span class="apidocCodeKeywordSpan">controller</span>('authenticationController', function($q, $http, userContextService
 , notAuthenticatedInterceptor) {
         var self = angular.extend(this, {
 error: null,
@@ -1305,7 +1298,7 @@ function _loadControllers(controllersRoot) {
 }
 
 function _shutDown() {
-    logger.log(&#x27;Shutting down private-bower&#x27;);
+    logger.log('Shutting down private-bower');
     if(_listeningServer){
         _listeningServer.close();
 ...</pre></li>
@@ -1336,7 +1329,7 @@ function _shutDown() {
         }
 
         function _removePackage(packageName) {
-            $http.<span class="apidocCodeKeywordSpan">delete</span>(&#x27;packages/&#x27; + packageName)
+            $http.<span class="apidocCodeKeywordSpan">delete</span>('packages/' + packageName)
 .success(function() {
     self.packageToRemove = null;
     self.removePackageDialogOpened = false;
@@ -1372,10 +1365,10 @@ function _shutDown() {
         }
 
         function _getPackages() {
-            $http.<span class="apidocCodeKeywordSpan">get</span>(&#x27;packages&#x27;)
+            $http.<span class="apidocCodeKeywordSpan">get</span>('packages')
 .success(function(packages) {
     self.packages = packages.map(function(pack) {
-        pack.siteUrl = pack.url.replace(&#x27;git://&#x27;, &#x27;https://&#x27;);
+        pack.siteUrl = pack.url.replace('git://', 'https://');
 
         return pack;
     });
@@ -1408,7 +1401,7 @@ function _shutDown() {
         }
 
         function _addPackage(packageName, packageUrl) {
-            $http.<span class="apidocCodeKeywordSpan">post</span>(&#x27;packages/&#x27; + packageName, {
+            $http.<span class="apidocCodeKeywordSpan">post</span>('packages/' + packageName, {
 url: packageUrl
             })
 .success(function() {
@@ -1474,9 +1467,9 @@ delete: function(path, middleware, handler) {
         var tempName = utils.getRandomString();
         var gitCloneFolder = path.join(tempFolder, tempName);
 
-        utils.exec(&#x27;git clone {0} {1} --depth=1&#x27;.format(packageUrl, gitCloneFolder))
+        utils.exec('git clone {0} {1} --depth=1'.format(packageUrl, gitCloneFolder))
             .then(function() {
-                var bowerJsonLocation = path.join(gitCloneFolder, &#x27;bower.json&#x27;);
+                var bowerJsonLocation = path.join(gitCloneFolder, 'bower.json');
 
                 var fileContent = fs.readFileSync(bowerJsonLocation);
                 var bowerJson = JSON.parse(fileContent);
@@ -1489,13 +1482,13 @@ delete: function(path, middleware, handler) {
     });
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-var SvnPackageDetailsProvider = require(&#x27;./svnPackageDetailsProvider&#x27;);
+var SvnPackageDetailsProvider = require('./svnPackageDetailsProvider');
 
-var utils = require(&#x27;../infrastructure/utils&#x27;);
+var utils = require('../infrastructure/utils');
 
 module.exports = function PackageDetailsProvider() {
 function _getPackageDetails(packageUrl) {
-    if(packageUrl.startsWith(&#x27;svn+&#x27;)) {
+    if(packageUrl.startsWith('svn+')) {
         return SvnPackageDetailsProvider.<span class="apidocCodeKeywordSpan">getPackageDetails</span>(packageUrl);
     }
     return GitPackageDetailsProvider.getPackageDetails(packageUrl);
@@ -1528,7 +1521,7 @@ return {
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
     if (_config.server.siteBaseURL) {
-        application.addMiddlewareWithMount(&#x27;/&#x27;, function redirectToBaseUrl(req, res, next) {
+        application.addMiddlewareWithMount('/', function redirectToBaseUrl(req, res, next) {
             res.redirect(_config.server.siteBaseURL);
         });
     }
@@ -1537,7 +1530,7 @@ return {
         logger.<span class="apidocCodeKeywordSpan">error</span>(err);
         logger.error(err.stack);
 
-        res.status(500).send(&#x27;Something wen\&#x27;t wrong :(&#x27;);
+        res.status(500).send('Something wen\'t wrong :(');
     });
 
     application.listen(_config.server.port, _config.server.hostName);
@@ -1555,9 +1548,9 @@ return {
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function _log(text) {
-    var timeStamp = moment().format(&#x27;D/M/YY HH:mm:ss&#x27;);
+    var timeStamp = moment().format('D/M/YY HH:mm:ss');
 
-    console.log(&#x27;[bower] &#x27;.green, timeStamp.cyan, &#x27; &#x27;, text);
+    console.log('[bower] '.green, timeStamp.cyan, ' ', text);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 function loadControllerAtByName(controllerPath) {
@@ -1567,7 +1560,7 @@ function loadControllerAtByName(controllerPath) {
     }
 
     function _shutDown() {
-logger.<span class="apidocCodeKeywordSpan">log</span>(&#x27;Shutting down private-bower&#x27;);
+logger.<span class="apidocCodeKeywordSpan">log</span>('Shutting down private-bower');
 if(_listeningServer){
     _listeningServer.close();
 }
@@ -1589,20 +1582,20 @@ if(_repoCacheHandler) {
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function _logHelp() {
     console.log([
-    &#x27;              _          _           _&#x27;,
-    &#x27;     _ __ _ _(_)_ ____ _| |_ ___ ___| |__  _____ __ _____ _ _&#x27;,
-    &#x27;    | \&#x27;_ \\ \&#x27;_| \\ V / _` |  _/ -_)___| \&#x27;_ \\/ _ \\ V  V / -_) \&#x27;_|&#x27;,
-    &#x27;    | .__/_| |_|\\_/\\__,_|\\__\\___|   |_.__/\\___/\\_/\\_/\\___|_|&#x27;,
-    &#x27;    |_|&#x27;,
-    &#x27;usage: private-bower [options]&#x27;,
-        &#x27;&#x27;,
-        &#x27;options:&#x27;,
-        &#x27;  --h --help          Print this list and exit.&#x27;,
-        &#x27;  --config            Path to the config file (Must be a valid json)&#x27;
-    ].join(&#x27;\n&#x27;));
+    '              _          _           _',
+    '     _ __ _ _(_)_ ____ _| |_ ___ ___| |__  _____ __ _____ _ _',
+    '    | \'_ \\ \'_| \\ V / _` |  _/ -_)___| \'_ \\/ _ \\ V  V / -_) \'_|',
+    '    | .__/_| |_|\\_/\\__,_|\\__\\___|   |_.__/\\___/\\_/\\_/\\___|_|',
+    '    |_|',
+    'usage: private-bower [options]',
+        '',
+        'options:',
+        '  --h --help          Print this list and exit.',
+        '  --config            Path to the config file (Must be a valid json)'
+    ].join('\n'));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-var version = require(&#x27;../package.json&#x27;).version;
+var version = require('../package.json').version;
 
 module.exports = function Main() {
     var _config;
@@ -1635,19 +1628,19 @@ if (argv.version) {
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function _getPackageDetails(packageUrl) {
-    if(packageUrl.startsWith(&#x27;svn+&#x27;)) {
+    if(packageUrl.startsWith('svn+')) {
         return SvnPackageDetailsProvider.getPackageDetails(packageUrl);
     }
     return GitPackageDetailsProvider.getPackageDetails(packageUrl);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-var SvnPackageDetailsProvider = require(&#x27;./svnPackageDetailsProvider&#x27;);
+var SvnPackageDetailsProvider = require('./svnPackageDetailsProvider');
 
-var utils = require(&#x27;../infrastructure/utils&#x27;);
+var utils = require('../infrastructure/utils');
 
 module.exports = function PackageDetailsProvider() {
 function _getPackageDetails(packageUrl) {
-    if(packageUrl.startsWith(&#x27;svn+&#x27;)) {
+    if(packageUrl.startsWith('svn+')) {
         return SvnPackageDetailsProvider.<span class="apidocCodeKeywordSpan">getPackageDetails</span>(packageUrl);
     }
     return GitPackageDetailsProvider.getPackageDetails(packageUrl);
@@ -1680,13 +1673,13 @@ return {
         });
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-var SvnPackageDetailsProvider = require(&#x27;./svnPackageDetailsProvider&#x27;);
+var SvnPackageDetailsProvider = require('./svnPackageDetailsProvider');
 
-var utils = require(&#x27;../infrastructure/utils&#x27;);
+var utils = require('../infrastructure/utils');
 
 module.exports = function PackageDetailsProvider() {
 function _getPackageDetails(packageUrl) {
-    if(packageUrl.startsWith(&#x27;svn+&#x27;)) {
+    if(packageUrl.startsWith('svn+')) {
         return SvnPackageDetailsProvider.<span class="apidocCodeKeywordSpan">getPackageDetails</span>(packageUrl);
     }
     return GitPackageDetailsProvider.getPackageDetails(packageUrl);
@@ -1722,15 +1715,15 @@ return {
         }
 
         function canHandlePublicPackage() {
-            var isValidByWhitelist = !config.public.whitelist.enabled || config.public.whitelist.indexOf(packageName) &#x3e; -1;
+            var isValidByWhitelist = !config.public.whitelist.enabled || config.public.whitelist.indexOf(packageName) &gt; -1;
             var notExcludedByBlacklist = !config.public.blacklist.enabled || config.public.blacklist.indexOf(packageName) !== -1
 ;
 
-            return !config.public.disabled &#x26;&#x26; isValidByWhitelist &#x26;&#x26; notExcludedByBlacklist;
+            return !config.public.disabled &amp;&amp; isValidByWhitelist &amp;&amp; notExcludedByBlacklist;
         }
 
         function handlePrivatePackage() {
-            if(config.repositoryCache &#x26;&#x26; config.repositoryCache.cachePrivate) {
+            if(config.repositoryCache &amp;&amp; config.repositoryCache.cachePrivate) {
                 if(privatePackage.cachedRepo) {
                     resolve({
                         name: packageName,
@@ -1857,7 +1850,7 @@ return {
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function _refresh() {
-    logger.log(&#x27;Refreshing repository&#x27;);
+    logger.log('Refreshing repository');
 
     return repoCacheHandler.getLatestForRepos();
 }</pre></li>
@@ -1960,7 +1953,7 @@ function _searchPackage(searchName) {
         }
 
         return list.filter(function(packageName) {
-            return config.public.whitelist.indexOf(packageName) &#x3e; -1;
+            return config.public.whitelist.indexOf(packageName) &gt; -1;
         });
     }
 
@@ -2056,7 +2049,7 @@ else if(canHandlePublicPackage()) {
         fs.unlinkSync(_options.persistFilePath);
     }
 
-    fs.writeFileSync(_options.persistFilePath, JSON.stringify(self.packages, null, &#x27;    &#x27;));
+    fs.writeFileSync(_options.persistFilePath, JSON.stringify(self.packages, null, '    '));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 
@@ -2087,11 +2080,11 @@ else if(canHandlePublicPackage()) {
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function _registerPackages(register) {
-    for(var i = 0, len = register.length; i &#x3c; len; i++) {
+    for(var i = 0, len = register.length; i &lt; len; i++) {
         var registerPackage = register[i];
 
         if(!registerPackage.name) {
-            logger.log(&#x27;Undefined package name&#x27;);
+            logger.log('Undefined package name');
 
             continue;
         }
@@ -2102,7 +2095,7 @@ else if(canHandlePublicPackage()) {
             hits: 0
         };
 
-        logger.log(&#x27;Registered package: &#x27; + registerPackage.name);
+        logger.log('Registered package: ' + registerPackage.name);
     }
 
     _persistPackages();
@@ -2136,10 +2129,10 @@ if(repoCacheHandler.enabled) {
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function _removePackages(remove) {
-    for(var i = 0, len = remove.length; i &#x3c; len; i++) {
+    for(var i = 0, len = remove.length; i &lt; len; i++) {
         delete self.packages[remove[i]];
 
-        logger.log(&#x27;Removed package: &#x27; + remove[i]);
+        logger.log('Removed package: ' + remove[i]);
     }
 
     _persistPackages();
@@ -2177,7 +2170,7 @@ function _searchPackage(searchName) {
     var packages = [];
 
     for(var packageName in self.packages) {
-        if(self.packages.hasOwnProperty(packageName) &#x26;&#x26;
+        if(self.packages.hasOwnProperty(packageName) &amp;&amp;
             packageName.toLowerCase().indexOf(searchName) !== -1) {
 
             var item = self.packages[packageName];
@@ -2231,7 +2224,7 @@ publicPackages = filterBlacklist(publicPackages);
 
 #!/usr/bin/env node
 
-require(&#x27;../lib/main&#x27;)().<span class="apidocCodeKeywordSpan">start</span>();
+require('../lib/main')().<span class="apidocCodeKeywordSpan">start</span>();
 ...</pre></li>
     </ul>
 
@@ -2287,7 +2280,7 @@ else if(canHandlePublicPackage()) {
     var packages = [];
 
     for(var packageName in _packages) {
-        if(_packages.hasOwnProperty(packageName) &#x26;&#x26;
+        if(_packages.hasOwnProperty(packageName) &amp;&amp;
             packageName.toLowerCase().indexOf(searchName) !== -1) {
 
             var item = _packages[packageName];
@@ -2334,7 +2327,7 @@ publicPackages = filterBlacklist(publicPackages);
     <li>example usage<pre class="apidocCodePre">...
 
 function _shutDown() {
-    logger.log(&#x27;Shutting down private-bower&#x27;);
+    logger.log('Shutting down private-bower');
     if(_listeningServer){
         _listeningServer.close();
     }
@@ -2360,7 +2353,7 @@ function _restart() {
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function _start() {
-    logger.log(&#x27;Refreshing public packages...&#x27;);
+    logger.log('Refreshing public packages...');
 
     _publicBowerUrl = config.public.registry;
 
@@ -2376,7 +2369,7 @@ function _restart() {
 
 #!/usr/bin/env node
 
-require(&#x27;../lib/main&#x27;)().<span class="apidocCodeKeywordSpan">start</span>();
+require('../lib/main')().<span class="apidocCodeKeywordSpan">start</span>();
 ...</pre></li>
     </ul>
 
@@ -2405,7 +2398,7 @@ require(&#x27;../lib/main&#x27;)().<span class="apidocCodeKeywordSpan">start</sp
 }
 
 function _refresh() {
-    logger.log(&#x27;Refreshing repository&#x27;);
+    logger.log('Refreshing repository');
 
     return repoCacheHandler.<span class="apidocCodeKeywordSpan">getLatestForRepos</span>();
 }
@@ -2443,7 +2436,7 @@ return {
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function _getRepoCache(repoUrl) {
-    if(repoUrl.indexOf(&#x27;svn+&#x27;) !== -1) {
+    if(repoUrl.indexOf('svn+') !== -1) {
         return _svnRepoCache;
     }
 
@@ -2520,7 +2513,7 @@ function _searchPackage(searchName) {
     <li>example usage<pre class="apidocCodePre">...
 
 function _shutDown() {
-    logger.log(&#x27;Shutting down private-bower&#x27;);
+    logger.log('Shutting down private-bower');
     if(_listeningServer){
         _listeningServer.close();
     }
@@ -2566,7 +2559,7 @@ function _restart() {
 
 #!/usr/bin/env node
 
-require(&#x27;../lib/main&#x27;)().<span class="apidocCodeKeywordSpan">start</span>();
+require('../lib/main')().<span class="apidocCodeKeywordSpan">start</span>();
 ...</pre></li>
     </ul>
 
@@ -2589,21 +2582,21 @@ require(&#x27;../lib/main&#x27;)().<span class="apidocCodeKeywordSpan">start</sp
         var tempName = utils.getRandomString();
         var svnCloneFolder = path.join(tempFolder, tempName);
 
-        // remove string &#x27;svn+&#x27; if isn&#x27;t &#x27;ssh&#x27; url.
-        if (packageUrl.indexOf(&#x27;ssh://&#x27;) == -1) {
-            packageUrl = packageUrl.replace(&#x27;svn+&#x27;, &#x27;&#x27;);
+        // remove string 'svn+' if isn't 'ssh' url.
+        if (packageUrl.indexOf('ssh://') == -1) {
+            packageUrl = packageUrl.replace('svn+', '');
         }
 
         // set to trunk to get the info.
-        if (packageUrl.slice(-1) === &#x27;/&#x27;) {
-            packageUrl = packageUrl + &#x27;trunk&#x27;;
+        if (packageUrl.slice(-1) === '/') {
+            packageUrl = packageUrl + 'trunk';
         } else {
-            packageUrl = packageUrl + &#x27;/trunk&#x27;;
+            packageUrl = packageUrl + '/trunk';
         }
 
-        utils.exec(&#x27;svn co {0} {1} --depth files&#x27;.format(packageUrl, svnCloneFolder))
+        utils.exec('svn co {0} {1} --depth files'.format(packageUrl, svnCloneFolder))
             .then(function() {
-                var bowerJsonLocation = path.join(svnCloneFolder, &#x27;bower.json&#x27;);
+                var bowerJsonLocation = path.join(svnCloneFolder, 'bower.json');
 
                 var fileContent = fs.readFileSync(bowerJsonLocation);
                 var bowerJson = JSON.parse(fileContent);
@@ -2616,13 +2609,13 @@ require(&#x27;../lib/main&#x27;)().<span class="apidocCodeKeywordSpan">start</sp
     });
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-var SvnPackageDetailsProvider = require(&#x27;./svnPackageDetailsProvider&#x27;);
+var SvnPackageDetailsProvider = require('./svnPackageDetailsProvider');
 
-var utils = require(&#x27;../infrastructure/utils&#x27;);
+var utils = require('../infrastructure/utils');
 
 module.exports = function PackageDetailsProvider() {
 function _getPackageDetails(packageUrl) {
-    if(packageUrl.startsWith(&#x27;svn+&#x27;)) {
+    if(packageUrl.startsWith('svn+')) {
         return SvnPackageDetailsProvider.<span class="apidocCodeKeywordSpan">getPackageDetails</span>(packageUrl);
     }
     return GitPackageDetailsProvider.getPackageDetails(packageUrl);
@@ -2652,7 +2645,7 @@ return {
     return new Promise(function(resolve, reject) {
         exec(command, {cwd: cwd}, function(error, stdout, stderr) {
             if(error) {
-                logger.log(&#x27;Error during &#x22;{0}&#x22; in &#x22;{1}&#x22;.\n\tOutput:\n\t\tstdout: {2}\n\t\tstderr: {3}&#x27;.format(command, cwd, stdout
+                logger.log('Error during "{0}" in "{1}".\n\tOutput:\n\t\tstdout: {2}\n\t\tstderr: {3}'.format(command, cwd, stdout
 , stderr));
 
                 reject(error);
@@ -2713,7 +2706,7 @@ return {
     <li>example usage<pre class="apidocCodePre">...
     self.configPath = configPath;
 
-    var configDirectory = path.join(configPath, &#x27;../&#x27;);
+    var configDirectory = path.join(configPath, '../');
 
     var json = fs.readFileSync(configPath).toString();
     var configFile = JSON.parse(json);
@@ -2724,7 +2717,7 @@ return {
     configureLog4Js();
 
     function setConfigValues() {
-        self.config.registryFile = getRelativeFilePath(configFile.registryFile || &#x27;./bowerRepository.json&#x27;);
+        self.config.registryFile = getRelativeFilePath(configFile.registryFile || './bowerRepository.json');
         self.config.server = self.config.server || {};
 ...</pre></li>
     </ul>
@@ -2747,7 +2740,7 @@ return {
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 
-            mockery.registerMock(&#x27;fs&#x27;, fsMock);
+            mockery.registerMock('fs', fsMock);
 
             mockery.resetCache();
 
@@ -2777,19 +2770,19 @@ return {
     return Math.random().toString(36).substring(2);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-var utils = require(&#x27;../infrastructure/utils&#x27;);
+var utils = require('../infrastructure/utils');
 
 module.exports = function GitPackageDetailsProvider() {
-    var tempFolder = path.join(utils.dirname, &#x27;temp/packageDetails&#x27;);
+    var tempFolder = path.join(utils.dirname, 'temp/packageDetails');
 
     function _getPackageDetails(packageUrl) {
         return new Promise(function(resolve, reject) {
             var tempName = utils.<span class="apidocCodeKeywordSpan">getRandomString</span>();
             var gitCloneFolder = path.join(tempFolder, tempName);
 
-            utils.exec(&#x27;git clone {0} {1} --depth=1&#x27;.format(packageUrl, gitCloneFolder))
+            utils.exec('git clone {0} {1} --depth=1'.format(packageUrl, gitCloneFolder))
                 .then(function() {
-var bowerJsonLocation = path.join(gitCloneFolder, &#x27;bower.json&#x27;);
+var bowerJsonLocation = path.join(gitCloneFolder, 'bower.json');
 
 var fileContent = fs.readFileSync(bowerJsonLocation);
 ...</pre></li>
@@ -2823,9 +2816,9 @@ var fileContent = fs.readFileSync(bowerJsonLocation);
     fs.rmdirSync(dirPath);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-        utils.exec(&#x27;git clone {0} {1} --depth=1&#x27;.format(packageUrl, gitCloneFolder))
+        utils.exec('git clone {0} {1} --depth=1'.format(packageUrl, gitCloneFolder))
             .then(function() {
-                var bowerJsonLocation = path.join(gitCloneFolder, &#x27;bower.json&#x27;);
+                var bowerJsonLocation = path.join(gitCloneFolder, 'bower.json');
 
                 var fileContent = fs.readFileSync(bowerJsonLocation);
                 var bowerJson = JSON.parse(fileContent);
@@ -2861,13 +2854,13 @@ var fileContent = fs.readFileSync(bowerJsonLocation);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
     function _restart() {
-logger.log(&#x27;Shutting down server for restart&#x27;);
+logger.log('Shutting down server for restart');
 
 _shutDown();
 
-logger.log(&#x27;Restarting private-bower with config set to &#x27; + configurationManager.configPath);
+logger.log('Restarting private-bower with config set to ' + configurationManager.configPath);
 
-utils.<span class="apidocCodeKeywordSpan">startDetachedChildProcess</span>(&#x27;private-bower&#x27;, [&#x27;--config&#x27;,  configurationManager
+utils.<span class="apidocCodeKeywordSpan">startDetachedChildProcess</span>('private-bower', ['--config',  configurationManager
 .configPath]);
     }
 
@@ -2890,3 +2883,4 @@ listen: _listen,
     ]
 </div>
 </div>
+</body></html>
