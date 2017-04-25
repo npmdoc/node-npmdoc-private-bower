@@ -1,9 +1,14 @@
-# api documentation for  [private-bower (v1.1.8)](http://hacklone.github.io/private-bower)  [![npm package](https://img.shields.io/npm/v/npmdoc-private-bower.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-private-bower) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-private-bower.svg)](https://travis-ci.org/npmdoc/node-npmdoc-private-bower)
+# npmdoc-private-bower
+
+#### basic api documentation for  [private-bower (v1.1.8)](http://hacklone.github.io/private-bower)  [![npm package](https://img.shields.io/npm/v/npmdoc-private-bower.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-private-bower) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-private-bower.svg)](https://travis-ci.org/npmdoc/node-npmdoc-private-bower)
+
 #### A simple private bower registry
 
 [![NPM](https://nodei.co/npm/private-bower.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/private-bower)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-private-bower/build/screenCapture.buildCi.browser.apidoc.html.png)](https://npmdoc.github.io/node-npmdoc-private-bower/build/apidoc.html)
+- [https://npmdoc.github.io/node-npmdoc-private-bower/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-private-bower/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-private-bower/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-private-bower/build/apidoc.html)
 
 ![npmPackageListing](https://npmdoc.github.io/node-npmdoc-private-bower/build/screenCapture.npmPackageListing.svg)
 
@@ -93,16 +98,6 @@
     "version": "1.1.8"
 }
 ```
-
-
-
-# <a name="apidoc.tableOfContents"></a>[table of contents](#apidoc.tableOfContents)
-
-#### [module private-bower](#apidoc.module.private-bower)
-
-
-
-# <a name="apidoc.module.private-bower"></a>[module private-bower](#apidoc.module.private-bower)
 
 
 
